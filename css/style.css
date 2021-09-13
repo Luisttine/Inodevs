@@ -70,15 +70,65 @@
   font-size: 2em;
   padding-right: 12vw;
 }
+
 #botao {
   background-color: #E5C03B;
   font-size: 2em;
   height: 6vh;
   text-align: center;
   padding: 0;
-  width: 13vw;
+  width: 14vw;
 }
 #botao:hover {
   cursor: pointer;
   background-color: darkgoldenrod;
+}
+
+@media screen and (max-width: 480px) {
+  * {
+    height: 10vh;
+  }
+ 
+  .blocos {
+    float: top;
+  }
+  
+.left {
+  padding: 0px;
+  padding-top: 13vw;
+  padding-bottom: 20vw;
+  width: 100vw;
+  display: flex;
+  font-size: 3em;
+  text-align: center;
+  align-items: center;
+}
+
+.right {
+  position: relative;
+  width: 100vw;
+  background-color: transparent;
+}
+
+.referencia {
+  position: relative;
+  margin-top: 140% ;
+  display: block;
+  bottom: 0;
+}
+#referencia,h2 {
+  color: #000;
+}
+
+#form, input {
+  height: 6vh;
+  width: 40vw;
+}
+#form, label {
+  padding-right: 28vw;
+}
+
+#botao {
+  width: 25vw;
+}
 }
