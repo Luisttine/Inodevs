@@ -1,0 +1,44 @@
+*{
+  margin:0;
+  font-size: 20px;
+}
+
+.fundo{
+  margin: 0;
+  padding: 0;
+  background-color: #002339;
+  height: 99.8vh;
+  max-width: 98%;
+}
+
+.container{
+  position: flex;
+  background-color: #fff;
+  height: 97.3%;
+  margin-left: 5.8vh;
+  width: 95%;
+}
+.container,h2 {
+  font-size: 1.7em;
+  padding-top: 1.9vh;
+  padding-left: 2vw;
+  padding-bottom: 1vh;
+}
+
+.quadro{
+  position: flex;
+  height: 60vh;
+  width: 90vw;
+  float: right;
+  margin-right: 3.5vw;
+  background-color: #fff;
+  color: #000;
+}
+
+.table {
+  padding: 0;
+  margin: 0;
+  border: solid 1px;
+  border-collapse: collapse;
+  width: 100%;
+}
