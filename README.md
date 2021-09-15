@@ -47,7 +47,7 @@ Acesse a _branch_ referente a entrega da sprint clicando no link:
 - [ ] Apresentação Final - 29/11 a 05/12 - Pendente
 - [ ] Feira de Soluções - 16/12 - Pendente
 
-##### <p align="left"><img src="https://cdn.discordapp.com/attachments/826526043917647912/887802009598689331/1909_1.jpg" width="80%"/>
+##### <p align="left"><img src="https://cdn.discordapp.com/attachments/767495340948848643/887809143916867614/IMG-20210915-WA0117.jpg" width="50%"/>
 
 <br>
 
