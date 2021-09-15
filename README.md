@@ -14,7 +14,7 @@
 
 ## :dart: Prosposta
 
-O objetivo do nosso grupo é criar um website para uma empresa de software, com a proposta de emitir relatórios mensais apresentando um quadro de presença de colaboradores em postos de trabalhos acordados em contrato.
+O objetivo do nosso grupo é criar um CRUD para uma empresa de software com a proposta de emitir relatórios mensais apresentando um quadro de presença de colaboradores em postos de trabalhos acordados em contrato.
 > [Documentação]()
 <br>
 
@@ -36,7 +36,21 @@ O objetivo do nosso grupo é criar um website para uma empresa de software, com 
 <br>
 
 ## :calendar: Plano de Ação
+
+Acesse a _branch_ referente a entrega da sprint clicando no link:
+
+- [x] Kick-off - 16/08 a 22/08 - Concluído :heavy_check_mark:
+- [ ] [Sprint 1](https://github.com/Inodevs/Inodevs/tree/sprint-1) - 30/08 a 19/09 - Em andamento
+- [ ] Sprint  2 - 20/09 a 10/10 - Pendente
+- [ ] Sprint  3 - 18/10 a 07/11 - Pendente
+- [ ] Sprint  4 - 08/11 a 28/11 - Pendente
+- [ ] Apresentação Final - 29/11 a 05/12 - Pendente
+- [ ] Feira de Soluções - 16/12 - Pendente
+
+<h1 align="left"> <img src = "/Imagens Gerais/Imagem cronograma.png"/></h1>
+
 <br>
+
 
 ## :rocket: Tecnologias Utilizadas
 
