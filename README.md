@@ -47,7 +47,7 @@ Acesse a _branch_ referente a entrega da sprint clicando no link:
 - [ ] Apresentação Final - 29/11 a 05/12 - Pendente
 - [ ] Feira de Soluções - 16/12 - Pendente
 
-<h1 align="left"> <img src = "/Imagens Gerais/Imagem cronograma.png"/></h1>
+##### <p align="left"><img src=".png" width="20" height="20" />
 
 <br>
 
@@ -55,7 +55,7 @@ Acesse a _branch_ referente a entrega da sprint clicando no link:
 ## :rocket: Tecnologias Utilizadas
 
 * **Reuniões e Apresentações:** Discord, WhatsApp e Microsoft Teams;
-* **Banco de Dados:**
+* **Banco de Dados:** MySQL e Wampserver;
 * **Back-end:** 
 * **Front-end:** HTML5, CSS e JavaScript;
 * **Ferramentas:** GitHub, VS Code e Figma.
