@@ -6,6 +6,7 @@
   <a href ="dart-prosposta">  Proposta </a>  • 
   <a href ="#pushpin-requisitos"> Requisitos </a>  • 
   <a href ="#calendar-plano-de-ação"> Plano de Ação </a>  • 
+  <a href ="computer-Wireframe-Desktop"> Wireframe </a>  • 
   <a href ="#rocket-tecnologias-utilizadas">  Tecnologias Utilizadas </a>  • 
   <a href ="#mortar_board-dev-team"> Dev Team </a> 
 </p>
@@ -51,7 +52,13 @@ Acesse a _branch_ referente a entrega da sprint clicando no link:
 
 <br>
 
+## :computer: Wireframe Desktop
 
+Acesse o link para visualizar:
+> * [Protótipo interativo no Figma.](https://www.figma.com/proto/tipWpDl8AF1pPSGCAsVdGA/Untitled?node-id=94%3A2&scaling=min-zoom&page-id=91%3A2&starting-point-node-id=94%3A2)
+
+  <br>
+  
 ## :rocket: Tecnologias Utilizadas
 
 * **Reuniões e Apresentações:** Discord, WhatsApp e Microsoft Teams;
