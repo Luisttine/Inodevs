@@ -56,9 +56,9 @@ Acesse a _branch_ referente a entrega da sprint clicando no link:
 
 * **Reuniões e Apresentações:** Discord, WhatsApp e Microsoft Teams;
 * **Banco de Dados:** MySQL e Wampserver;
-* **Back-end:** 
+* **Back-end:** PHP;
 * **Front-end:** HTML5, CSS e JavaScript;
-* **Ferramentas:** GitHub, VS Code e Figma.
+* **Ferramentas:** GitHub, VS Code, Canva e Figma.
 <br>
 
 ## :mortar_board: Dev Team
