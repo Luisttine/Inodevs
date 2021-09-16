@@ -4,9 +4,9 @@
 
 <p align="center">
   <a href ="#information_source-informações"> Informações </a>  • 
-  <a href ="#pushpin-requisitos"> Entregas </a>  • 
-  <a href ="#calendar-plano-de-ação"> Execução </a>  • 
-  <a href ="#rocket-tecnologias-utilizadas">  Burndown </a>  • 
+  <a href ="#airplane-requisitos"> Entregas </a>  • 
+  <a href ="#gear-execução"> Execução </a>  • 
+  <a href ="chart_with_upwards_trend-burndown ">  Burndown </a>  • 
   <a href ="#mortar_board-dev-team"> Dev Team </a> 
 </p>
 <hr>
@@ -14,39 +14,22 @@
 
 ## :information_source: Informações
 
-> [Wireframe]()<br>
+> [Wireframe](https://www.figma.com/proto/tipWpDl8AF1pPSGCAsVdGA/Untitled?node-id=94%3A2&scaling=scale-down-width&page-id=91%3A2&starting-point-node-id=94%3A2)<br>
 > [Documentação]()<br>
 > [Apresentação]()<br>
 
 <br>
 
-## :pushpin: Requisitos
-
-### Requisitos Funcionais
-1. &nbsp; Cadastros de Usuários, Contratos, Clientes, Colaboradores, Postos de Trabalho, Alocações;
-2. &nbsp; Quadro Presença; 
-3. &nbsp; Usuários devem ter perfis diferentes;
-4. &nbsp; Lançamento do quadro de presenças;
-5. &nbsp; Relatórios.<br>
-
-### Requisitos Não Funcionais
-1. &nbsp; BD Relacional (Requisito Fatec);
-2. &nbsp; Linguagem Java ou Python (Requisito Fatec);
-3. &nbsp; O sistema deve ter um plano de contingência caso ocorra falhas;
-4. &nbsp; O sistema deve ser seguro;
-5. &nbsp; O sistema deve ser simples e fácil de usar.
+## :airplane: Entregas da Sprint
+:heavy_check_mark:
 <br>
 
-## :calendar: Plano de Ação
+## :gear: Execução
 <br>
 
-## :rocket: Tecnologias Utilizadas
+## :chart_with_upwards_trend: Burndown
+<h1 align="center"><img src = ".png"/></h1>
 
-* **Reuniões e Apresentações:** Discord, WhatsApp e Microsoft Teams;
-* **Banco de Dados:**
-* **Back-end:** 
-* **Front-end:** HTML5, CSS e JavaScript;
-* **Ferramentas:** GitHub, VS Code e Figma.
 <br>
 
 ## :mortar_board: Dev Team
