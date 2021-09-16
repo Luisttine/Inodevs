@@ -3,7 +3,7 @@
 <hr>
 
 <p align="center">
-  <a href ="information_source-informacoes"> Informações </a>  • 
+  <a href ="#information_source-informações"> Informações </a>  • 
   <a href ="#pushpin-requisitos"> Entregas </a>  • 
   <a href ="#calendar-plano-de-ação"> Execução </a>  • 
   <a href ="#rocket-tecnologias-utilizadas">  Burndown </a>  • 
