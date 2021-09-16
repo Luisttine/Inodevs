@@ -3,7 +3,7 @@
 <hr>
 
 <p align="center">
-  <a href ="dart-prosposta">  Proposta </a>  • 
+  <a href ="#dart-prosposta">  Proposta </a>  • 
   <a href ="#pushpin-requisitos"> Requisitos </a>  • 
   <a href ="#calendar-plano-de-ação"> Plano de Ação </a>  • 
   <a href ="#computer-wireframe-desktop"> Wireframe </a>  • 
