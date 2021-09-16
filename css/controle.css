@@ -1,35 +1,33 @@
 *{
+    padding: 0;
     margin:0;
     font-size: 20px;
   }
   
-  .fundo{
-    margin: 0;
-    padding: 0;
-    background-color: #002339;
-    height: 100vh;
-    max-width: 100%;
-  }
-  
-  .container{
-      position: relative;
-      background-color: #fff;
-      height: 69.2vw;
-      margin-left: 5.8vh;
-      width: 95.8vw;
-  }
-  .container,h2 {
-      font-size: 1.7em;
-      padding-top: 1.9vh;
-      padding-bottom: 1vh;
-    }
+.fundo {
+  margin: 0;
+  padding: 0;
+}
 
-    h2{
-        padding-left: 2vw;
-        margin-bottom: 3vh;
-    }
+.container{
+    position: relative;
+    background-color: #fff;
+    height: 51.2vw;
+    width: 96.9vw;
+    padding-left: 2vw;
+    text-align: center;
+}
+.container,h2 {
+    font-size: 1.7em;
+    padding-top: 1.9vh;
+    padding-bottom: 1vh;
+}
+h2{
+      padding-left: 2vw;
+      margin-bottom: 3vh;
+}
   
-  
+
 .menu {
     display: inline-block;
     position: relative;
@@ -38,8 +36,9 @@
     left: auto;
     background-color: #E5C03B;
     text-align: center;
-    padding-top: 0.75vh;
-    padding-bottom: 1.25vh;
+    padding-left: 1vw;
+    padding-top: 1.25vh;
+    padding-bottom: 1.25%;
 }
   
 #cadastros{
@@ -59,18 +58,19 @@
     display: inline-block;
   }
 
- a{
+a{
     font-size: 2em;
     color: #000;
     text-decoration: none;
+    margin-bottom: 0.25vh;
   }
 
   
- a:hover{
+a:hover{
     color: #ff0000;
   }
 
-  #edicoes{
+#edicoes{
     position: relative;
     margin-right:0;
     height: 100%;
@@ -79,7 +79,7 @@
 }
   
 .menu2{
-    height: 77.6vh;
+    height: 70.6vh;
 }
 
 #left{
@@ -121,4 +121,13 @@
 }
 .yellow:hover{
     background-color: darkgoldenrod;
+}
+
+.left1{
+  position: absolute;
+  width: 59px;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+  background: #002339;
 }
