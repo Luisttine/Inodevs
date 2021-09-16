@@ -6,7 +6,6 @@
   <a href ="dart-prosposta">  Proposta </a>  • 
   <a href ="#pushpin-requisitos"> Requisitos </a>  • 
   <a href ="#calendar-plano-de-ação"> Plano de Ação </a>  • 
-  <a href ="#computer-wireframe-desktop"> Wireframe </a>  • 
   <a href ="#rocket-tecnologias-utilizadas">  Tecnologias Utilizadas </a>  • 
   <a href ="#mortar_board-dev-team"> Dev Team </a> 
 </p>
@@ -15,7 +14,7 @@
 
 ## :dart: Prosposta
 
-O objetivo do nosso grupo é criar um CRUD para uma empresa de software com a proposta de emitir relatórios mensais apresentando um quadro de presença de colaboradores em postos de trabalhos acordados em contrato.
+O objetivo do nosso grupo é criar um website para uma empresa de software, com a proposta de emitir relatórios mensais apresentando um quadro de presença de colaboradores em postos de trabalhos acordados em contrato.
 > [Documentação]()
 <br>
 
@@ -37,35 +36,15 @@ O objetivo do nosso grupo é criar um CRUD para uma empresa de software com a pr
 <br>
 
 ## :calendar: Plano de Ação
-
-Acesse a _branch_ referente a entrega da sprint clicando no link:
-
-- [x] Kick-off - 16/08 a 22/08 - Concluído :heavy_check_mark:
-- [ ] [Sprint 1](https://github.com/Inodevs/Inodevs/tree/sprint-1) - 30/08 a 19/09 - Em andamento
-- [ ] Sprint  2 - 20/09 a 10/10 - Pendente
-- [ ] Sprint  3 - 18/10 a 07/11 - Pendente
-- [ ] Sprint  4 - 08/11 a 28/11 - Pendente
-- [ ] Apresentação Final - 29/11 a 05/12 - Pendente
-- [ ] Feira de Soluções - 16/12 - Pendente
-
-##### <p align="left"><img src="https://cdn.discordapp.com/attachments/767495340948848643/887832986194677830/IMG-20210915-WA0148.jpg" width="40%"/>
-
 <br>
 
-## :computer: Wireframe Desktop
-
-Acesse o link para visualizar:
-> * [Protótipo interativo no Figma.](https://www.figma.com/proto/tipWpDl8AF1pPSGCAsVdGA/Untitled?node-id=94%3A2&scaling=min-zoom&page-id=91%3A2&starting-point-node-id=94%3A2)
-
-  <br>
-  
 ## :rocket: Tecnologias Utilizadas
 
 * **Reuniões e Apresentações:** Discord, WhatsApp e Microsoft Teams;
-* **Banco de Dados:** MySQL e Wampserver;
-* **Back-end:** PHP;
+* **Banco de Dados:**
+* **Back-end:** 
 * **Front-end:** HTML5, CSS e JavaScript;
-* **Ferramentas:** GitHub, VS Code, Canva e Figma.
+* **Ferramentas:** GitHub, VS Code e Figma.
 <br>
 
 ## :mortar_board: Dev Team
