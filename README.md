@@ -55,7 +55,7 @@ Acesse a _branch_ referente a entrega da sprint clicando no link:
 ## :computer: Wireframe Desktop
 
 Acesse o link para visualizar:
-> * [Protótipo interativo no Figma.](https://www.figma.com/proto/tipWpDl8AF1pPSGCAsVdGA/Untitled?node-id=94%3A2&scaling=min-zoom&page-id=91%3A2&starting-point-node-id=94%3A2)
+> * [Protótipo interativo no Figma.](https://www.figma.com/proto/tipWpDl8AF1pPSGCAsVdGA/Untitled?node-id=94%3A2&scaling=scale-down-width&page-id=91%3A2&starting-point-node-id=94%3A2)
 
   <br>
   
