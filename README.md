@@ -38,6 +38,7 @@
 <br>
 
 ## :chart_with_upwards_trend: Burndown
+*O gráfico abaixo mostra o desempenho da equipe na realização das tarefas referentes a Sprint:*
 <h1 align="center"><img src = ".png"/></h1>
 
 <br>
