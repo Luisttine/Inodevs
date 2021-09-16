@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href ="#information_source-informações"> Informações </a>  • 
-  <a href ="#airplane-requisitos"> Entregas </a>  • 
+  <a href ="#dart-entregas-da-sprint"> Entregas </a>  • 
   <a href ="#gear-execução"> Execução </a>  • 
   <a href ="chart_with_upwards_trend-burndown ">  Burndown </a>  • 
   <a href ="#mortar_board-dev-team"> Dev Team </a> 
@@ -20,8 +20,9 @@
 
 <br>
 
-## :airplane: Entregas da Sprint
+## :dart: Entregas da Sprint
 :heavy_check_mark:
+
 <br>
 
 ## :gear: Execução
