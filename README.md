@@ -3,10 +3,10 @@
 <hr>
 
 <p align="center">
-  <a href ="dart-prosposta"> Entregas </a>  • 
-  <a href ="#pushpin-requisitos"> Requisitos </a>  • 
-  <a href ="#calendar-plano-de-ação"> Plano de Ação </a>  • 
-  <a href ="#rocket-tecnologias-utilizadas">  Tecnologias Utilizadas </a>  • 
+  <a href ="dart-prosposta"> Informações </a>  • 
+  <a href ="#pushpin-requisitos"> Entregas </a>  • 
+  <a href ="#calendar-plano-de-ação"> Execução </a>  • 
+  <a href ="#rocket-tecnologias-utilizadas">  Burndown </a>  • 
   <a href ="#mortar_board-dev-team"> Dev Team </a> 
 </p>
 <hr>
