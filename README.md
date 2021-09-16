@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href ="#information_source-informações"> Informações </a>  • 
-  <a href ="#dart-entregas-da-sprint"> Entregas </a>  • 
+  <a href ="#dart-entregas-da-primeira-sprint"> Entregas </a>  • 
   <a href ="#gear-execução"> Execução </a>  • 
   <a href ="chart_with_upwards_trend-burndown ">  Burndown </a>  • 
   <a href ="#mortar_board-dev-team"> Dev Team </a> 
@@ -20,9 +20,18 @@
 
 <br>
 
-## :dart: Entregas da Sprint
-:heavy_check_mark:
-
+## :dart: Entregas da Primeira Sprint
+* Protótipo :heavy_check_mark:
+* Página de Login :heavy_check_mark:
+* Documentação Inicial :heavy_check_mark:
+* Banco de Dados :heavy_check_mark:
+* Cadastro de Usuários :heavy_check_mark:
+* Cadastro de Colaboradores :heavy_check_mark:
+* Quadro de Presença :heavy_check_mark:
+* Cadastros do Quadro de Presença  :heavy_check_mark:
+* Controle de Perfis :heavy_check_mark:
+* Revisão e Correção :heavy_check_mark:
+* Validação do Produto :heavy_check_mark:
 <br>
 
 ## :gear: Execução
