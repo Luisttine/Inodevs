@@ -27,7 +27,6 @@
 * Banco de Dados :heavy_check_mark:
 * Cadastro de Usuários :heavy_check_mark:
 * Cadastro de Colaboradores :heavy_check_mark:
-* Quadro de Presença :heavy_check_mark:
 * Cadastros do Quadro de Presença  :heavy_check_mark:
 * Controle de Perfis :heavy_check_mark:
 * Revisão e Correção :heavy_check_mark:
