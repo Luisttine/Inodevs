@@ -28,7 +28,7 @@
 * Cadastro de Usuários :heavy_check_mark:
 * Cadastro de Colaboradores :heavy_check_mark:
 * Cadastros do Quadro de Presença  :heavy_check_mark:
-* Controle de Perfis :heavy_check_mark:
+* Página do Tático :heavy_check_mark:
 * Revisão e Correção :heavy_check_mark:
 * Validação do Produto :heavy_check_mark:
 <br>
