@@ -132,3 +132,8 @@ a:hover{
   top: 0px;
   background: #002339;
 }
+
+.barra img{
+  width: 4vw;
+  height: 10vh;
+}
