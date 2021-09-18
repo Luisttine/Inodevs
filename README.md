@@ -41,7 +41,7 @@ O objetivo do nosso grupo é criar um CRUD para uma empresa de software com a pr
 Acesse a _branch_ referente a entrega da sprint clicando no link:
 
 - [x] Kick-off - 16/08 a 22/08 - Concluído :heavy_check_mark:
-- [ ] [Sprint 1](https://github.com/Inodevs/Inodevs/tree/sprint-1) - 30/08 a 19/09 - Em andamento
+- [x] [Sprint 1](https://github.com/Inodevs/Inodevs/tree/sprint-1) - 30/08 a 19/09 - Concluído :heavy_check_mark:
 - [ ] Sprint  2 - 20/09 a 10/10 - Pendente
 - [ ] Sprint  3 - 18/10 a 07/11 - Pendente
 - [ ] Sprint  4 - 08/11 a 28/11 - Pendente
