@@ -6,7 +6,8 @@
   <a href ="#information_source-informações"> Informações </a>  • 
   <a href ="#dart-entregas-da-primeira-sprint"> Entregas </a>  • 
   <a href ="#gear-execução"> Execução </a>  • 
-  <a href ="chart_with_upwards_trend-burndown ">  Burndown </a>  • 
+  <a href ="#game_die-banco-de-dados">  Banco de Dados</a>  • 
+  <a href ="#chart_with_upwards_trend-burndown">  Burndown </a>  • 
   <a href ="#mortar_board-dev-team"> Dev Team </a> 
 </p>
 <hr>
@@ -17,7 +18,6 @@
 > [Wireframe](https://www.figma.com/proto/tipWpDl8AF1pPSGCAsVdGA/Untitled?node-id=94%3A2&scaling=scale-down-width&page-id=91%3A2&starting-point-node-id=94%3A2)<br>
 > [Documentação](https://github.com/Inodevs/Inodevs/blob/sprint-1/documenta%C3%A7%C3%A3o/InodevsSprint1.pdf)<br>
 > [Apresentação]()<br>
-
 <br>
 
 ## :dart: Entregas da Primeira Sprint
@@ -34,12 +34,16 @@
 <br>
 
 ## :gear: Execução
+<h1 align="center"><img src = "https://github.com/Inodevs/Inodevs/blob/sprint-1/execu%C3%A7%C3%A3o/Execu%C3%A7%C3%A3oP%C3%A1ginas_1.gif" width="85%"></h1>
+<br>
+
+## :game_die: Banco de Dados
+<h1 align="center"><img src = "https://github.com/Inodevs/Inodevs/blob/sprint-1/execu%C3%A7%C3%A3o/Execu%C3%A7%C3%A3oBD.gif" width="85%"></h1>
 <br>
 
 ## :chart_with_upwards_trend: Burndown
 *O gráfico abaixo mostra o desempenho da equipe na realização das tarefas referentes a Sprint:*
 <h1 align="center"><img src = ".png"/></h1>
-
 <br>
 
 ## :mortar_board: Dev Team
