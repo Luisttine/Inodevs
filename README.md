@@ -43,7 +43,7 @@
 
 ## :chart_with_upwards_trend: Burndown
 *O gráfico abaixo mostra o desempenho da equipe na realização das tarefas referentes a Sprint:*
-<h1 align="center"><img src = ".png"/></h1>
+<h1 align="center"><img src = "https://media.discordapp.net/attachments/826526043917647912/888988224737918986/IMG-20210919-WA0003.jpg" width="85%"></h1>
 <br>
 
 ## :mortar_board: Dev Team
