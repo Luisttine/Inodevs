@@ -17,7 +17,7 @@
 
 > [Wireframe](https://www.figma.com/proto/tipWpDl8AF1pPSGCAsVdGA/Untitled?node-id=94%3A2&scaling=scale-down-width&page-id=91%3A2&starting-point-node-id=94%3A2)<br>
 > [Documentação](https://github.com/Inodevs/Inodevs/blob/sprint-1/documenta%C3%A7%C3%A3o/InodevsSprint1.pdf)<br>
-> [Apresentação]()<br>
+> [Apresentação](https://github.com/Inodevs/Inodevs/blob/sprint-1/documenta%C3%A7%C3%A3o/sprint-1.pdf)<br>
 <br>
 
 ## :dart: Entregas da Primeira Sprint
