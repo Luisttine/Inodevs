@@ -81,6 +81,13 @@
             unset($_SESSION['msg']);
         }
     ?>
-<div class="left"></div>
+    <div class="left">
+        <div class="barra">
+            <nav>
+                <a href="./presenca.php"><div class="link" id="selected"><img src="../img/calendar.png" alt=""></div></a>
+                <a href="../html/controle.html"><div class="link"><img src="../img/notebook.png" ></div></a>
+            </nav>
+        </div>
+    </div>
 </body>
 </html>
