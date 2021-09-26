@@ -1,46 +1,50 @@
-# <p align="center"> Sprint 1 </center>
+# <p align="center"> JetSoft </center>
 
 <hr>
 
 <p align="center">
-  <a href ="#information_source-informações"> Informações </a>  • 
-  <a href ="#dart-entregas-da-primeira-sprint"> Entregas </a>  • 
-  <a href ="#gear-execução"> Execução </a>  • 
-  <a href ="chart_with_upwards_trend-burndown ">  Burndown </a>  • 
+  <a href ="dart-prosposta">  Proposta </a>  • 
+  <a href ="#pushpin-requisitos"> Requisitos </a>  • 
+  <a href ="#calendar-plano-de-ação"> Plano de Ação </a>  • 
+  <a href ="#rocket-tecnologias-utilizadas">  Tecnologias Utilizadas </a>  • 
   <a href ="#mortar_board-dev-team"> Dev Team </a> 
 </p>
 <hr>
 <br>
 
-## :information_source: Informações
+## :dart: Prosposta
 
-> [Wireframe](https://www.figma.com/proto/tipWpDl8AF1pPSGCAsVdGA/Untitled?node-id=94%3A2&scaling=scale-down-width&page-id=91%3A2&starting-point-node-id=94%3A2)<br>
-> [Documentação]()<br>
-> [Apresentação]()<br>
-
+O objetivo do nosso grupo é criar um website para uma empresa de software, com a proposta de emitir relatórios mensais apresentando um quadro de presença de colaboradores em postos de trabalhos acordados em contrato.
+> [Documentação]()
 <br>
 
-## :dart: Entregas da Primeira Sprint
-* Protótipo :heavy_check_mark:
-* Página de Login :heavy_check_mark:
-* Documentação Inicial :heavy_check_mark:
-* Banco de Dados :heavy_check_mark:
-* Cadastro de Usuários :heavy_check_mark:
-* Cadastro de Colaboradores :heavy_check_mark:
-* Quadro de Presença :heavy_check_mark:
-* Cadastros do Quadro de Presença  :heavy_check_mark:
-* Controle de Perfis :heavy_check_mark:
-* Revisão e Correção :heavy_check_mark:
-* Validação do Produto :heavy_check_mark:
+## :pushpin: Requisitos
+
+### Requisitos Funcionais
+1. &nbsp; Cadastros de Usuários, Contratos, Clientes, Colaboradores, Postos de Trabalho, Alocações;
+2. &nbsp; Quadro Presença; 
+3. &nbsp; Usuários devem ter perfis diferentes;
+4. &nbsp; Lançamento do quadro de presenças;
+5. &nbsp; Relatórios.<br>
+
+### Requisitos Não Funcionais
+1. &nbsp; BD Relacional (Requisito Fatec);
+2. &nbsp; Linguagem Java ou Python (Requisito Fatec);
+3. &nbsp; O sistema deve ter um plano de contingência caso ocorra falhas;
+4. &nbsp; O sistema deve ser seguro;
+5. &nbsp; O sistema deve ser simples e fácil de usar.
 <br>
 
-## :gear: Execução
+## :calendar: Plano de Ação
 <br>
 
-## :chart_with_upwards_trend: Burndown
-*O gráfico abaixo mostra o desempenho da equipe na realização das tarefas referentes a Sprint:*
-<h1 align="center"><img src = ".png"/></h1>
+## :rocket: Tecnologias Utilizadas
 
+* **Reuniões e Apresentações:** Discord, WhatsApp e Microsoft Teams;
+* **Banco de Dados:**
+* **Back-end:** 
+* **Front-end:** HTML5, CSS e JavaScript;
+* **Ferramentas:** GitHub, VS Code e Figma.
 <br>
 
 ## :mortar_board: Dev Team

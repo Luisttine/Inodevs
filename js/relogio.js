@@ -1,4 +1,3 @@
-
 function Tempo(){
     var data = new Date()
     var hora = data.getHours()
