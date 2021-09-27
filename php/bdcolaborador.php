@@ -17,9 +17,9 @@
     
     if(mysqli_insert_id($conn)){
         header("Location: colaboradores.php");
-        $_SESSION['msg'] = "<br><p style='color: green; text-align: center'>Usuário cadastrado com sucesso!</p>";
+        $_SESSION['msg'] = "<br><p style='color: green; text-align: center'>Colaborador cadastrado com sucesso!</p>";
     } else {
         header("Location: colaboradores.php");
-        $_SESSION['msg'] = "<br><p style='color: red; text-align: center'>Usuário não foi cadastrado com sucesso.</p>";
+        $_SESSION['msg'] = "<br><p style='color: red; text-align: center'>Erro no Cadastro</p>";
     }
 ?>

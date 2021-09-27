@@ -55,7 +55,7 @@ input:not([type="checkbox"]){
 
 #main-container {
     width: 50%;
-    height: 55vh;
+    height: 49vh;
     margin-left: 25%;
     margin-top: 1.5%;
     background-color: #FFF;
@@ -97,36 +97,40 @@ form {
 }
     
 .middle-box {
-    flex: 1 1 50%;
-    position: absolute;
-    width: 95%;
-    margin-top: 45%;
+    position: relative;
+    margin-left: 14%;
+    width: 75%;
+    margin-top: 1%;
 }   
     
 input[type="submit"] {
-    background-color: #E5C03B;
+    background-color: #E5C03B;;
     padding: 8px 5px;
     font-size: 20px;  
     margin-bottom: 10px;  
     border-radius: 20px;
+    cursor: pointer;
+    padding: 7px ;
 }
-    
 input[type="submit"]:hover{
     background: darkgoldenrod;
-}
-    
+} 
 input, label[type="fullbox"] {
     width: 100%; 
     outline: thin dotted;
     outline: 0px auto;
     outline-offset: 0px;
 }
-
 input:focus{
     border-color: #578fb3;
     outline: none;
 }
 
+#btn-submit {
+    margin-left: 12vw;
+    width: 5%;
+    margin-bottom: 19vh;
+}
 #btn-submit1 {
     background-color: #3d7292;
     color:#FFF;
@@ -146,12 +150,12 @@ input {
     font-size: .9rem;
     margin-bottom: 40px;
 }
-    
+     
 input:focus [type="lastname"] {
     outline: none;
     display: block;
 }
-    
+       
 input:focus[type="checkbox"] {
     display:inline-block;
 }
@@ -164,8 +168,14 @@ a {
 a.links{
     display: none;
 }
-    
+      
 .spacing{
     height: 10%;
     width: 10%;
 }
+
+.barra img{
+    width: 4vw;
+    height: 10vh;
+}
+

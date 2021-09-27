@@ -53,7 +53,6 @@
             unset($_SESSION['msg']);
         }
     ?>
-    <div class="left"></div>
-
+    <div class="left"></div>   
 </body>
 </html>
