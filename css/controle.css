@@ -131,22 +131,16 @@ a:hover{
   background-color: darkgoldenrod;
 }
 
-.left1{
-position: absolute;
-width: 59px;
-height: 100vh;
-left: 0px;
-top: 0px;
-background: #002339;
+.left1 {
+  position: absolute;
+  width: 59px;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+  background: #002339;
 }
 
 .barra img{
-width: 4vw;
-height: 10vh;
-}
-
-
-#selected {
-    border-radius: 5%;
-    background-color: #578fb3;
+  width: 4vw;
+  height: 10vh;
 }

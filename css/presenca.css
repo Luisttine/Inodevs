@@ -155,13 +155,3 @@ textarea{
     top: 0px;
     background: #002339;
 }
-
-.barra img{
-    width: 4vw;
-    height: 10vh;
-}
-
-#selected {
-    border-radius: 5%;
-    background-color: #578fb3;
-}
