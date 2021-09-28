@@ -1,49 +1,73 @@
-# <p align="center"> Sprint 1 </center>
+
+
+# <p align="center"> InoDevs </center>
 
 <hr>
 
 <p align="center">
-  <a href ="#information_source-informações"> Informações </a>  • 
-  <a href ="#dart-entregas-da-primeira-sprint"> Entregas </a>  • 
-  <a href ="#gear-execução"> Execução </a>  • 
-  <a href ="#game_die-banco-de-dados">  Banco de Dados</a>  • 
-  <a href ="#chart_with_upwards_trend-burndown">  Burndown </a>  • 
+  <a href ="#dart-prosposta">  Proposta </a>  • 
+  <a href ="#pushpin-requisitos"> Requisitos </a>  • 
+  <a href ="#calendar-plano-de-ação"> Plano de Ação </a>  • 
+  <a href ="#computer-wireframe-desktop"> Wireframe </a>  • 
+  <a href ="#rocket-tecnologias-utilizadas">  Tecnologias Utilizadas </a>  • 
   <a href ="#mortar_board-dev-team"> Dev Team </a> 
 </p>
 <hr>
 <br>
 
-## :information_source: Informações
+## :dart: Prosposta
 
-> [Wireframe](https://www.figma.com/proto/tipWpDl8AF1pPSGCAsVdGA/Untitled?node-id=94%3A2&scaling=scale-down-width&page-id=91%3A2&starting-point-node-id=94%3A2)<br>
-> [Documentação](https://github.com/Inodevs/Inodevs/blob/sprint-1/documenta%C3%A7%C3%A3o/InodevsSprint1.pdf)<br>
-> [Apresentação](https://github.com/Inodevs/Inodevs/blob/sprint-1/documenta%C3%A7%C3%A3o/sprint-1.pdf)<br>
+O objetivo do nosso grupo é criar um CRUD para uma empresa de software com a proposta de emitir relatórios mensais apresentando um quadro de presença de colaboradores em postos de trabalhos acordados em contrato.
+> [Documentação]()
 <br>
 
-## :dart: Entregas da Primeira Sprint
-* Protótipo :heavy_check_mark:
-* Página de Login :heavy_check_mark:
-* Documentação Inicial :heavy_check_mark:
-* Banco de Dados :heavy_check_mark:
-* Cadastro de Usuários :heavy_check_mark:
-* Cadastro de Colaboradores :heavy_check_mark:
-* Cadastros do Quadro de Presença  :heavy_check_mark:
-* Página do Tático :heavy_check_mark:
-* Revisão e Correção :heavy_check_mark:
-* Validação do Produto :heavy_check_mark:
+## :pushpin: Requisitos
+
+### Requisitos Funcionais
+1. &nbsp; Cadastros de Usuários, Contratos, Clientes, Colaboradores, Postos de Trabalho, Alocações;
+2. &nbsp; Quadro Presença; 
+3. &nbsp; Usuários devem ter perfis diferentes;
+4. &nbsp; Lançamento do quadro de presenças;
+5. &nbsp; Relatórios.<br>
+
+### Requisitos Não Funcionais
+1. &nbsp; BD Relacional (Requisito Fatec);
+2. &nbsp; Linguagem Java ou Python (Requisito Fatec);
+3. &nbsp; O sistema deve ter um plano de contingência caso ocorra falhas;
+4. &nbsp; O sistema deve ser seguro;
+5. &nbsp; O sistema deve ser simples e fácil de usar.
 <br>
 
-## :gear: Execução
-<h1 align="center"><img src = "https://github.com/Inodevs/Inodevs/blob/sprint-1/execu%C3%A7%C3%A3o/Execu%C3%A7%C3%A3oP%C3%A1ginas_1.gif" width="85%"></h1>
+## :calendar: Plano de Ação
+
+Acesse a _branch_ referente a entrega da sprint clicando no link:
+
+- [x] Kick-off - 16/08 a 22/08 - Concluído :heavy_check_mark:
+- [ ] [Sprint 1](https://github.com/Inodevs/Inodevs/tree/sprint-1) - 30/08 a 19/09 - Em andamento
+- [ ] Sprint  2 - 20/09 a 10/10 - Pendente
+- [ ] Sprint  3 - 18/10 a 07/11 - Pendente
+- [ ] Sprint  4 - 08/11 a 28/11 - Pendente
+- [ ] Apresentação Final - 29/11 a 05/12 - Pendente
+- [ ] Feira de Soluções - 16/12 - Pendente
+
+##### <p align="left"><img src="https://cdn.discordapp.com/attachments/767495340948848643/887832986194677830/IMG-20210915-WA0148.jpg" width="55%" height="60%"/>
+
 <br>
 
-## :game_die: Banco de Dados
-<h1 align="center"><img src = "https://github.com/Inodevs/Inodevs/blob/sprint-1/execu%C3%A7%C3%A3o/Execu%C3%A7%C3%A3oBD.gif" width="85%"></h1>
-<br>
+## :computer: Wireframe Desktop
 
-## :chart_with_upwards_trend: Burndown
-*O gráfico abaixo mostra o desempenho da equipe na realização das tarefas referentes a Sprint:*
-<h1 align="center"><img src = "https://media.discordapp.net/attachments/826526043917647912/888988224737918986/IMG-20210919-WA0003.jpg" width="80%"></h1>
+Acesse o link para visualizar:
+> * [Protótipo interativo no Figma.](https://www.figma.com/proto/tipWpDl8AF1pPSGCAsVdGA/Untitled?node-id=94%3A2&scaling=scale-down-width&page-id=91%3A2&starting-point-node-id=94%3A2)
+
+  <br>
+  
+## :rocket: Tecnologias Utilizadas
+
+* **Reuniões e Apresentações:** Discord, WhatsApp e Microsoft Teams;
+* **Banco de Dados:** MySQL e Wampserver;
+* **Back-end:** PHP;
+* **Front-end:** HTML5, CSS e JavaScript;
+* **Ferramentas:** GitHub, VS Code, Canva e Figma.
 <br>
 
 ## :mortar_board: Dev Team
