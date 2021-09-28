@@ -55,7 +55,7 @@ input:not([type="checkbox"]){
 
 #main-container {
     width: 50%;
-    height: 47vh;
+    height: 53vh;
     margin-left: 25%;
     margin-top: 1.5%;
     background-color: #FFF;
@@ -98,7 +98,7 @@ form {
     
 .middle-box {
     position: relative;
-    width: 95%;
+    width: 90%;
     margin-top: 4%;
 }   
     
@@ -109,7 +109,6 @@ input[type="submit"] {
     margin-bottom: 10px;  
     border-radius: 20px;
     cursor: pointer;
-    padding: 7px ;
 }
 input[type="submit"]:hover{
     background: darkgoldenrod;
@@ -126,9 +125,9 @@ input:focus{
 }
 
 #btn-submit {
-    margin-left: 12vw;
-    width: 5%;
-    margin-bottom: 19vh;
+    margin-left: 8vw;
+    width: 70%;
+    margin-bottom: 11vh;
 }
 #btn-submit1 {
     background-color: #3d7292;

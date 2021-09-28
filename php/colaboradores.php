@@ -66,7 +66,7 @@
                         <option>Flutuante</option>          
                     </select>
                     <br><br>
-                    <div class="middle-box">
+                    <div class="middle-box" id="btn-submit">
                         <input type="submit" value="Cadastrar">
                     </div>
                 </div>
@@ -81,13 +81,6 @@
             unset($_SESSION['msg']);
         }
     ?>
-    <div class="left">
-        <div class="barra">
-            <nav>
-                <a href="./presenca.php"><div class="link" id="selected"><img src="../img/calendar.png" alt=""></div></a>
-                <a href="../html/controle.html"><div class="link"><img src="../img/notebook.png" ></div></a>
-            </nav>
-        </div>
-    </div>
+    <div class="left"></div>
 </body>
 </html>
