@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/contratos">
+    <link rel="stylesheet" href="../css/contratos.css">
     <title>Contratos</title>
    
 </head>
@@ -45,7 +45,7 @@
                 <input type="text" name="postos" placeholder="Ex: Posto centro da cidade, 88 vagas" required>
             </div>
 
-            <div class="middle-box" id="btn-submit">
+            <div id="btn-submit">
                 <input type="submit" value="Cadastrar">
             </div>
         </form>

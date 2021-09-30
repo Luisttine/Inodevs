@@ -126,9 +126,9 @@ input:focus{
 }
 
 #btn-submit {
-    margin-left: 12vw;
-    width: 5%;
-    margin-bottom: 19vh;
+    margin-left: 8.0vw;
+    width: 70%;
+    margin-top: 1vh;
 }
 #btn-submit1 {
     background-color: #3d7292;

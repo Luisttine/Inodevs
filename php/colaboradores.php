@@ -66,7 +66,7 @@
                         <option>Flutuante</option>          
                     </select>
                     <br><br>
-                    <div class="middle-box" id="btn-submit">
+                    <div id="btn-submit">
                         <input type="submit" value="Cadastrar">
                     </div>
                 </div>

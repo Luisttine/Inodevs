@@ -33,8 +33,8 @@
             </div>
 
 <br><br>
-            <div class="middle-box">
-                <input id="btn-submit" type="submit" value="Cadastrar">
+            <div id="btn-submit">
+                <input type="submit" value="Cadastrar">
             </div>
         </form>
 

@@ -55,7 +55,7 @@ input:not([type="checkbox"]){
 
 #main-container {
     width: 50%;
-    height: 53vh;
+    height: 55vh;
     margin-left: 25%;
     margin-top: 3%;
     background-color: #FFF;
@@ -122,7 +122,7 @@ input:focus{
 #btn-submit {
     margin-left: 8vw;
     width: 70%;
-    margin-bottom: 1vh;
+    margin-top: 1vh;
 }
 #btn-submit1 {
     margin: 0px;

@@ -41,8 +41,8 @@
                 <label for="funcao">Senha</label>
                 <input type="password" name="senha" id="senha" placeholder="Digite a senha" required>
             </div>   
-            <div class="middle-box">
-                <input id="btn-submit" type="submit" value="Cadastrar">   
+            <div id="btn-submit">
+                <input type="submit" value="Cadastrar">   
             </div><br><br>
         </form>
     

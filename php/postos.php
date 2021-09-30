@@ -36,7 +36,7 @@
         
                
                     <br><br>
-                    <div class="middle-box">
+                    <div id="btn-submit">
                         <input type="submit" value="Cadastrar">
                     </div>
                 </div>
