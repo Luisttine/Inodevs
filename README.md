@@ -1,4 +1,4 @@
-# <p align="center"> Sprint 1 </center>
+# <p align="center"> Sprint 3 </center>
 
 <hr>
 
@@ -16,34 +16,35 @@
 ## :information_source: Informações
 
 > [Wireframe](https://www.figma.com/proto/tipWpDl8AF1pPSGCAsVdGA/Untitled?node-id=94%3A2&scaling=scale-down-width&page-id=91%3A2&starting-point-node-id=94%3A2)<br>
-> [Documentação](https://github.com/Inodevs/Inodevs/blob/sprint-1/documenta%C3%A7%C3%A3o/InodevsSprint1.pdf)<br>
-> [Apresentação](https://github.com/Inodevs/Inodevs/blob/sprint-1/documenta%C3%A7%C3%A3o/sprint-1.pdf)<br>
+> [Documentação]()<br>
+> [Apresentação]()<br>
 <br>
 
 ## :dart: Entregas da Primeira Sprint
-* Protótipo :heavy_check_mark:
-* Página de Login :heavy_check_mark:
-* Documentação Inicial :heavy_check_mark:
-* Banco de Dados :heavy_check_mark:
-* Cadastro de Usuários :heavy_check_mark:
-* Cadastro de Colaboradores :heavy_check_mark:
-* Cadastros do Quadro de Presença  :heavy_check_mark:
-* Página do Tático :heavy_check_mark:
+* Lançamento de presença:heavy_check_mark:
+* Documentação :heavy_check_mark:
+* Banco de Dados relacional :heavy_check_mark:
+* Cadastro de contratos  :heavy_check_mark:
+* Cadastro de clientes :heavy_check_mark:
+* Cadastro de postos de trabalho :heavy_check_mark:
+* Cadastro de alocações :heavy_check_mark:
+* Quadro de Presença  :heavy_check_mark:
+* Página de Visualização do time scrum :heavy_check_mark:
 * Revisão e Correção :heavy_check_mark:
 * Validação do Produto :heavy_check_mark:
 <br>
 
 ## :gear: Execução
-<h1 align="center"><img src = "https://github.com/Inodevs/Inodevs/blob/sprint-1/execu%C3%A7%C3%A3o/Execu%C3%A7%C3%A3oP%C3%A1ginas_1.gif" width="85%"></h1>
+<h1 align="center"><img src = "" width="85%"></h1>
 <br>
 
 ## :game_die: Banco de Dados
-<h1 align="center"><img src = "https://github.com/Inodevs/Inodevs/blob/sprint-1/execu%C3%A7%C3%A3o/Execu%C3%A7%C3%A3oBD.gif" width="85%"></h1>
+<h1 align="center"><img src = "" width="85%"></h1>
 <br>
 
 ## :chart_with_upwards_trend: Burndown
 *O gráfico abaixo mostra o desempenho da equipe na realização das tarefas referentes a Sprint:*
-<h1 align="center"><img src = "https://media.discordapp.net/attachments/826526043917647912/888988224737918986/IMG-20210919-WA0003.jpg" width="80%"></h1>
+<h1 align="center"><img src = "" width="80%"></h1>
 <br>
 
 ## :mortar_board: Dev Team
