@@ -1,4 +1,4 @@
-# <p align="center"> Sprint 3 </center>
+# <p align="center"> Sprint 2 </center>
 
 <hr>
 
