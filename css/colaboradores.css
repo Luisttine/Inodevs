@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -55,7 +56,7 @@ input:not([type="checkbox"]){
 
 #main-container {
     width: 50%;
-    height: 72vh;
+    height: 73vh;
     margin-left: 25%;
     margin-top: 1.5%;
     background-color: #FFF;
@@ -100,14 +101,14 @@ form {
     flex: 1 1 50%;
     position: absolute;
     width: 95%;
-    margin-top: 52%;
+    margin-top: 12.5%;
 }   
     
 input[type="submit"] {
     background-color: #E5C03B;;
     padding: 8px 5px;
     font-size: 20px;  
-    margin-bottom: 10px;  
+    margin-bottom: 10vh;  
     border-radius: 20px;
     cursor: pointer;
 }
@@ -127,7 +128,12 @@ input:focus{
     border-color: #578fb3;
     outline: none;
 }
-    
+
+#btn-submit {
+    margin-left: 8vw;
+    width: 70%;
+    padding-top: 2vh;
+}    
 #btn-submit1 {
     background-color: #3d7292;
     color:#FFF;
@@ -171,7 +177,4 @@ a.links{
     width: 10%;
 }
 
-.barra img{
-    width: 4vw;
-    height: 10vh;
-}
+
