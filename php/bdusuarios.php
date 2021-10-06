@@ -4,7 +4,7 @@
 
 	$nome = $_POST['nome'];
     $login = $_POST['login'];
-    $senha = $_POST['senha'];
+    $senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
     $email = $_POST['email'];
 
     $result = "INSERT INTO usuarios (nome, ulogin, senha, email) VALUES ('$nome','$login','$senha','$email')";

@@ -49,7 +49,7 @@ input:not([type="checkbox"]){
 
 #main-container {
     width: 50%;
-    height: 53vh;
+    height: 55vh;
     margin-left: 25%;
     margin-top: 4%;
     background-color: #FFF;
@@ -115,10 +115,9 @@ input:focus{
     outline: none;
 }
 #btn-submit {
-    margin-left: 8vw;
-    width: 70%;
-    margin-bottom: 2vh;
-}  
+    margin-left: 12vw;
+    width: 20vw;
+}
 #btn-submit1 {
     background-color: #3d7292;
     color:#FFF;
@@ -137,4 +136,9 @@ input {
     padding: 15px;
     font-size: .9rem;
     margin-bottom: 40px;
+}
+
+.barra img{
+    width: 4vw;
+    height: 10vh;
 }

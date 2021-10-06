@@ -98,8 +98,9 @@ form {
     
 .middle-box {
     position: relative;
-    width: 90%;
-    margin-top: 4%;
+    margin-left: 14%;
+    width: 75%;
+    margin-top: 0.5%;
 }   
     
 input[type="submit"] {
@@ -109,6 +110,7 @@ input[type="submit"] {
     margin-bottom: 10px;  
     border-radius: 20px;
     cursor: pointer;
+    padding: 7px ;
 }
 input[type="submit"]:hover{
     background: darkgoldenrod;
@@ -125,9 +127,9 @@ input:focus{
 }
 
 #btn-submit {
-    margin-left: 8vw;
-    width: 70%;
-    margin-top: 2vh;
+    margin-left: 12vw;
+    width: 5%;
+    margin-bottom: 19vh;
 }
 #btn-submit1 {
     background-color: #3d7292;

@@ -20,32 +20,44 @@
     <div id="main-container">
         <h1>Alocações</h1><BR>
 
-        <form id="register-form" method="POST" action="bdusuarios">
+        <form id="register-form" method="POST" action="bdalocacoes.php">
 
             <div class="full-box">
                 <label for="name">Associação do colaborador com o posto</label>
                 <input type="text" name="associacao" id="associacao"  required>
             </div>
 
-            <div class="half-box spacing">
-                <label for="endereço"> Tipo de cobertura</label>
-                <input type="text" name="login" id="login"  required>
+            <div class="half-box">
+                <label for="tipo_de_cobertura">Tipo de cobertura</label>
+                <div class="table_cell table_title two">
+                    <select name="tipo_de_cobertura" required>
+                        <option value="" disabled selected hidden>Selecione um tipo de cobertura...</option>
+                        <option>Fixo</option>
+                        <option>Flutuante</option>          
+                    </select>
+                </div>
             </div>
 
 <br><br>
-            <div id="btn-submit">
-                <input type="submit" value="Cadastrar">
+            <div class="middle-box">
+                <input id="btn-submit" type="submit" value="Cadastrar">
             </div>
         </form>
 
     </div>
-<div class="left"></div>
     <?php
         if(isset($_SESSION['msg'])){
             echo $_SESSION['msg'];
             unset($_SESSION['msg']);
         }
     ?>
-
+    <div class="left">
+        <div class="barra">
+            <nav>
+                <a href="./presenca.php"><div class="link" id="selected"><img src="../img/calendar.png" alt=""></div></a>
+                <a href="../html/controle.html"><div class="link"><img src="../img/notebook.png" ></div></a>
+            </nav>
+        </div>
+    </div>
 </body>
 </html>

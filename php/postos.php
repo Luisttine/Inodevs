@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/postos.css">
+    <link rel="stylesheet" href="../css/postos.css?v=<? echo time() ?>">
     <title>Postos de trabalho</title>
    
 </head>
@@ -18,28 +18,25 @@
     <br><br><br>
     <div id="main-container">
         <h1>Postos de trabalho</h1><BR>
-        <form  method="POST" action="bdcolaborador.php">
+        <form  method="POST" action="bdpostos.php">
+            <div class="full-box">
+            <label for="name">Nome do Posto</label>
+            <input type="text" name="nome_posto" placeholder="Digite o nome do posto" required>
+            </div>
             <div class="full-box">
             <label for="name">Descrição</label>
             <input type="text" name="descricao" placeholder="Digite a descrição" required>
             </div>
             <div class="half-box spacing">
                 <label for="endereço">Escala</label>
-                <input type="text" name="matricula" placeholder="Ex: 1502556561" required>
+                <input type="text" name="escala" placeholder="Ex: 1502556561" required>
             </div>
             <div class="half-box spacing">
                 <label for="endereço">Número de colaboradores</label>
-                <input type="text" name="matricula" placeholder="Ex: 1502556561" required>
+                <input type="text" name="numero_colab" placeholder="Ex: 1502556561" required>
             </div>
-            <div class="half-box">
-                <label for="situacao">Situação do Cadastro</label>
-        
-               
-                    <br><br>
-                    <div id="btn-submit">
-                        <input type="submit" value="Cadastrar">
-                    </div>
-                </div>
+            <div class="middle-box">
+                <input type="submit" value="Cadastrar">
             </div>
         </form>
     </div>
@@ -51,6 +48,13 @@
             unset($_SESSION['msg']);
         }
     ?>
-<div class="left"></div>
+    <div class="left">
+        <div class="barra">
+            <nav>
+                <a href="./presenca.php"><div class="link" id="selected"><img src="../img/calendar.png" alt=""></div></a>
+                <a href="../html/controle.html"><div class="link"><img src="../img/notebook.png" ></div></a>
+            </nav>
+        </div>
+    </div>
 </body>
 </html>

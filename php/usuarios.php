@@ -1,5 +1,9 @@
 <?php
     session_start();
+    include_once("conexao.php");
+    $sql_code = "SELECT * FROM colaboradores";
+    $sql_query = $conn->query($sql_code) or die($mysqli->error);
+    $linha = $sql_query->fetch_assoc();
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -21,14 +25,21 @@
         <h1>Cadastro de usuário</h1><BR>
 
         <form id="register-form" method="POST" action="bdusuarios">
-         
-            <div class="full-box">
-                <label for="name">Nome</label>
-                <input type="text" name="nome" id="nome" placeholder="Digite o nome" required>
+            <div class="half-box">
+                <label for="name">Nome</label><br>
+                <select name="nome" required> 
+                        <option value="" disabled selected hidden>Selecione um colaborador...</option>
+                    <?php
+                            do{
+                                    $linha_colaborador = $linha['nome_completo'];       
+                                    echo "<option>$linha_colaborador</option>";
+                            }while($linha=$sql_query->fetch_assoc());
+                    ?>       
+                </select>
             </div>
 
             <div class="half-box spacing">
-                <label for="endereço">Login</label>
+                <label for="endereço">Login</label><br>
                 <input type="text" name="login" id="login" placeholder="Ex:1524642597" required>
             </div>
       
@@ -41,8 +52,8 @@
                 <label for="funcao">Senha</label>
                 <input type="password" name="senha" id="senha" placeholder="Digite a senha" required>
             </div>   
-            <div id="btn-submit">
-                <input type="submit" value="Cadastrar">   
+            <div class="middle-box">
+                <input id="btn-submit" type="submit" value="Cadastrar">   
             </div><br><br>
         </form>
     
@@ -53,6 +64,13 @@
             unset($_SESSION['msg']);
         }
     ?>
-    <div class="left"></div>   
+    <div class="left">
+        <div class="barra">
+            <nav>
+                <a href="./presenca.php"><div class="link" id="selected"><img src="../img/calendar.png" alt=""></div></a>
+                <a href="../html/controle.html"><div class="link"><img src="../img/notebook.png" ></div></a>
+            </nav>
+        </div>
+    </div>
 </body>
 </html>

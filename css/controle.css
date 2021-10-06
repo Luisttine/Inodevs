@@ -5,6 +5,7 @@
   font-family: Space, Helvetica, sans-serif, Mono, Arial;
   color: #323232;
   border: none;
+  font-size: 20px;
 }
 
 body{
@@ -25,8 +26,8 @@ padding: 0;
   text-align: center;
 }
 .container,h2 {
-  font-size: 1.7em;
-  padding-top: 1.9vh;
+  font-size: 1.6em;
+  padding-top: 1.7vh;
   padding-bottom: 1vh;
 }
 h2{
@@ -39,13 +40,13 @@ h2{
   display: inline-block;
   position: relative;
   width: 96vw;
-  height: 10vh;
+  height: 9vh;
   left: auto;
   background-color: #E5C03B;
   text-align: center;
   padding-left: 2vw;
-  padding-top: 1.25vh;
-  padding-bottom: 1.25%;
+  padding-top: 1.5vh;
+  padding-bottom: 1.25vh;
   margin-left: 2vw;
 }
 
@@ -107,13 +108,13 @@ a:hover{
 }
 
 #botao {
-  margin-top: 12vh;
-  height: 6vh;
+  margin-top: 9vh;
+  height: 8vh;
   text-align: center;
   padding: 0;
-  width: 23vw;
+  width: 24vw;
   border-radius: 50px;
-  font-size: 0.7em;
+  font-size: 0.6em;
   outline: 0px auto;
   outline-offset: 0px;
   border: none;
@@ -132,20 +133,118 @@ a:hover{
 }
 
 .left1 {
+  padding-top: 1.5vh;
   position: absolute;
   width: 59px;
   height: 100vh;
   left: 0px;
   top: 0px;
-  background: #002339;
+  background-color: #002339;
+  ;
 }
 
 .barra img{
   width: 4vw;
-  height: 10vh;
+  height: 6vh;
+}
+#selected {
+  color: #002339;
 }
 
-#selected {
-  border-radius: 5%;
-  background-color: #578fb3;
+@media screen and (max-width: 480px) {
+  * {
+    height: 13vh;
+    font-size: 14px;
+  }
+ 
+  .container{
+    margin-top: 4vh;
+    background-color: #002339;
+    height: 17vh;
+    width: 100%;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  .container,h2 {
+    color: #fff;
+    font-size: 1.5em;
+    padding-top: 3.2vh;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  
+  .menu {
+    align-items: center;
+    margin-left: 0;
+    width: 100%;
+    height: 9vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-top: 2vh;
+  }
+  
+  #cadastros{
+    width: 20vw;
+    float: left;
+  }
+  
+  #presencas{
+    margin-right:0;
+    width: 23vw;
+    float: center;
+  }
+  
+  #edicoes{
+    float: right;
+    width: 20vw;
+  }
+  
+  .menu2{
+    margin: 0;
+    padding-top: .7vh;
+    float: top;
+  }
+  
+  #left{
+    width: 100%;
+    height: 33vh;
+  }
+  
+  #right{
+    width: 100%;
+    height: 33vh;
+  }
+  
+  #botao {
+    margin-top: 2.8vh;
+    height: 8vh;
+    width: 50vw;
+    border-radius: 50px;
+    font-size: 0.7em;
+    outline: 0px auto;
+    outline-offset: 0px;
+    border: none;
+  }
+  #botao:hover {
+    cursor: pointer;
+  }
+  
+  .yellow{
+    margin-top: 1vh;
+    background-color: #E5C03B;
+    color: #000;
+  }
+  .yellow:hover{
+    background-color: darkgoldenrod;
+  }
+  
+  .barra img{
+    margin-left: 1vh;
+    width: 9vw;
+    height: 6vh;
+  }
+
+  .link{
+    float: left;
+  }
 }

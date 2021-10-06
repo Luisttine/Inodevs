@@ -1,6 +1,10 @@
 <?php
     session_start();
-?>
+    include_once("conexao.php");
+    $sql_code_posto = "SELECT * FROM presenca_posto";
+    $sql_query_posto = $conn->query($sql_code_posto) or die($mysqli->error);
+    $linha_posto = $sql_query_posto->fetch_assoc();
+?>      
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -31,7 +35,7 @@
                 <label for="situacao">Situação do Cadastro</label>
         
                 <div class="table_cell table_title two">
-                    <select name="situacao">
+                    <select name="situacao" required>
                         <option value="" disabled selected hidden>Selecione uma situação de cadastro...</option>
                         <option>Em admissão</option>
                         <option>Empregado</option>
@@ -60,27 +64,53 @@
                 <label for="tipo_cobertura">Tipo de cobertura</label>
                 <div class="table_cell table_title two">
             
-                    <select name="tipo_cobertura">
+                    <select name="tipo_cobertura" required>
                         <option value="" disabled selected hidden>Selecione um tipo de cobertura...</option>
                         <option>Fixo</option>
                         <option>Flutuante</option>          
                     </select>
                     <br><br>
-                    <div id="btn-submit">
-                        <input type="submit" value="Cadastrar">
-                    </div>
                 </div>
+            </div>
+
+            <div class="half-box">
+                <label for="posto_trabalho">Posto de Trabalho</label>
+                <div class="table_cell table_title two">
+            
+                    <select name="posto_trabalho" required> 
+                        <option value="" disabled selected hidden>Selecione um posto de trabalho...</option>
+                    <?php
+                        do {
+                    ?>
+                            <option><?php echo $linha_posto['posto_de_trabalho'];?></option>
+                    <?php
+                        } while($linha_posto=$sql_query_posto->fetch_assoc());
+                    ?>        
+                    </select>
+                    <br><br>
+                </div>
+            </div>
+            
+            <div class="middle-box">
+                <input type="submit" value="Cadastrar">
             </div>
         </form>
     </div>
 
 
-  <?php
+    <?php
         if(isset($_SESSION['msg'])){
             echo $_SESSION['msg'];
             unset($_SESSION['msg']);
         }
     ?>
-    <div class="left"></div>
+    <div class="left">
+        <div class="barra">
+            <nav>
+                <a href="./presenca.php"><div class="link" id="selected"><img src="../img/calendar.png" alt=""></div></a>
+                <a href="../html/controle.html"><div class="link"><img src="../img/notebook.png" ></div></a>
+            </nav>
+        </div>
+    </div>
 </body>
 </html>

@@ -18,16 +18,16 @@
     <br><br><br>
     <div id="main-container">
         <h1>Clientes</h1><BR>
-        <form  method="POST" action="bdcolaborador.php">
+        <form  method="POST" action="bdclientes.php">
             
             <div class="full-box">
                 <label for="name">Razão Social</label>
-                <input type="text" name="razão social" placeholder="Ex.: Inodevs Ltda" required>
+                <input type="text" name="razao_social" placeholder="Ex.: Gerente de vendas" required>
             </div>
             
             <div class="full-box">
                 <label for="fantasia">Nome Fantasia</label>
-                <input type="text" name="nome fantasia" placeholder="Ex.: Inodevs" required>
+                <input type="text" name="nome_fantasia" placeholder="Ex.: Inodevs" required>
             </div>
             
             <div class="half-box">
@@ -42,7 +42,7 @@
             
             <div class="full-box">
                 <label for="endereço">Endereço</label>
-                <input type="text" name="endereço"  placeholder="Ex.: Rua Almirante Junior, 101" required>
+                <input type="text" name="endereco"  placeholder="Ex.: Rua Almirante Junior, 101" required>
             
             </div>
                     
@@ -51,14 +51,20 @@
             </div>
         </form>
     </div>
-
-
     <?php
         if(isset($_SESSION['msg'])){
             echo $_SESSION['msg'];
             unset($_SESSION['msg']);
         }
     ?>
-    <div class="left"></div>
+
+    <div class="left">
+        <div class="barra">
+            <nav>
+                <a href="./presenca.php"><div class="link" id="selected"><img src="../img/calendar.png" alt=""></div></a>
+                <a href="../html/controle.html"><div class="link"><img src="../img/notebook.png" ></div></a>
+            </nav>
+        </div>
+    </div>
 </body>
 </html>

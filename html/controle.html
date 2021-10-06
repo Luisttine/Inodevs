@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/controle.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/sidebar.css">
     <title>Controle de Perfis</title>
 </head>
 <body>
@@ -38,14 +40,45 @@
         <section>
     </div>
 
-    <div class="left1">
-        <div class="barra">
-            <nav>
-                <a href="../php/presenca.php"><div class="link"><img src="../img/calendar.png" alt=""></div></a>
-                <a href="./controle.html"><div class="link" id="selected"><img src="../img/notebook.png" ></div></a>
-            </nav>
+    <div class="sidebar">
+        <div class="logo_content">
+            <i class='bx bx1-c-plus-plus'></i>
+            <div class="logo">
+                <i class='bx bx-code-alt' ></i>
+                <div class="logo_name">CodingLab</div>
+            </div>
+            <i class='bx bx-menu' id="btn"></i>
         </div>
+        <ul class="nav_list">
+            <li>
+                <a href="#">
+                    <i class='bx bx-calendar'></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class='bx bx-check-square' ></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+        </ul>
     </div>
+
+    <script>
+
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+
+        btn.onclick = function() {
+            sidebar.classList.toggle("active");
+        }
+
+    </script>
 
 </body>
 </html>

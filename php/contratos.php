@@ -18,16 +18,15 @@
     <br><br><br>
     <div id="main-container">
         <h1>Contratos</h1><BR>
-        <form  method="POST" action="bdcolaborador.php">
+        <form  method="POST" action="bdcontratos.php">
 
             <div class="half-box spacing">
             <label for="name">Número</label>
-            <input type="text" name="numero" placeholder="Ex: 480578936" required>
+                <input type="text" name="numero" placeholder="Deixar em branco" required>
             </div>
-
             <div class="half-box spacing">
-                <label for="endereço">Escala</label>
-                <input type="text" name="matricula" placeholder="Ex: 5x2" required>
+                <label for="endereço">Posto de trabalho associados ao contrato e suas quantidades de vagas</label>
+                <input type="text" name="posto_trabalho" placeholder="Ex: Gerente - fixo - 5 vagas" required>
             </div>
 
             <div class="half-box spacing">
@@ -37,15 +36,15 @@
 
             <div class="half-box spacing">
                 <label for="endereço">Cliente</label>
-                <input type="text" name="cliente" placeholder="Ex: Inovar Ltda" required>
+                <input type="text" name="cliente" placeholder="Ex: Vó Maria Felix Ltda." required>
             </div>
 
             <div class="half-box spacing">
-                <label for="endereço">Posto de trabalho associados ao contrato e suas quantidades de vagas</label>
-                <input type="text" name="postos" placeholder="Ex: Posto centro da cidade, 88 vagas" required>
+                <label for="endereço">Escala</label>
+                <input type="text" name="escala" placeholder="Ex:8x16" required>
             </div>
 
-            <div id="btn-submit">
+            <div class="middle-box">
                 <input type="submit" value="Cadastrar">
             </div>
         </form>
@@ -58,7 +57,14 @@
         }
     ?>
 
-    <div class="left"></div>
+    <div class="left">
+        <div class="barra">
+            <nav>
+                <a href="./presenca.php"><div class="link" id="selected"><img src="../img/calendar.png" alt=""></div></a>
+                <a href="../html/controle.html"><div class="link"><img src="../img/notebook.png" ></div></a>
+            </nav>
+        </div>
+    </div>
 
 </body>
 </html>
