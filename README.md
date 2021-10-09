@@ -75,7 +75,7 @@ Acesse o link para visualizar:
 * **Banco de Dados:** MySQL e Wampserver;
 * **Back-end:** PHP;
 * **Front-end:** HTML5, CSS e JavaScript;
-* **Ferramentas:** GitHub, VS Code, Canva e Figma.
+* **Ferramentas:** GitHub, VS Code, Canva, Excel e Figma.
 <br>
 
 ## :mortar_board: Dev Team
