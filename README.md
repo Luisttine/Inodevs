@@ -6,7 +6,7 @@
   <a href ="#dart-prosposta">  Proposta </a>  • 
   <a href ="#pushpin-requisitos"> Requisitos </a>  • 
   <a href ="#calendar-plano-de-ação"> Plano de Ação </a>  • 
-  <a href ="#computer-wireframe-desktop"> Wireframe </a>  • 
+  <a href ="#computer-wireframe-desktop"> Wireframe</a>  • 
   <a href ="#rocket-tecnologias-utilizadas">  Tecnologias Utilizadas </a>  • 
   <a href ="#mortar_board-dev-team"> Dev Team </a> 
 </p>
@@ -49,15 +49,25 @@ Acesse a _branch_ referente a entrega da sprint clicando no link:
 - [ ] Feira de Soluções - 16/12 - Pendente
 
 ##### <p align="left"><img src="https://cdn.discordapp.com/attachments/826526043917647912/894935171424481280/unknown.png" width="55%" height="60%"/>
-
+_As cores indicam a ordem de importância dada pelo grupo:_ <br>
+  - _Vermelho - muito importante;_ <br> 
+  - _Amarelo - importante;_
+  - _Verde - menos importante._
 <br>
 
 ## :computer: Wireframe Desktop
 
 Acesse o link para visualizar:
 > * [Protótipo interativo no Figma.](https://www.figma.com/proto/tipWpDl8AF1pPSGCAsVdGA/Untitled?node-id=94%3A2&scaling=scale-down-width&page-id=91%3A2&starting-point-node-id=94%3A2)
-
+  
   <br>
+  
+## :iphone: Wireframe Mobile
+
+Acesse o link para visualizar:
+> * [Protótipo interativo no Figma.](https://www.figma.com/proto/tipWpDl8AF1pPSGCAsVdGA/Untitled?node-id=531%3A3&scaling=min-zoom&page-id=530%3A2&starting-point-node-id=531%3A3)
+  
+<br>
   
 ## :rocket: Tecnologias Utilizadas
 
