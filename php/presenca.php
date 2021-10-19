@@ -68,7 +68,7 @@
                 <span class="tooltip">Perfis</span>
             </li>
             <li>
-                <a href="../index.php">
+                <a href="../php/sair.php">
                     <i class='bx bx-exit'></i>
                     <span class="links_name">Sair</span>
                 </a>
@@ -87,6 +87,6 @@
         EOT;
         } else {
             $_SESSION['msg'] = "<p style='color: red; font-size: 18px'> Você precisa estar logado!</p>";
-            header('location: index.php');
+            header('location: ../index.php');
         }
 ?>
