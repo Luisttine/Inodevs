@@ -1,24 +1,34 @@
 <?php
-session_start();
-include('conexao.php');
-
-$email = mysqli_real_escape_string($conn, $_POST['email']);
-$senha = mysqli_real_escape_string($conn, $_POST['senha']);
-
-$query = "select email from usuarios where email = '$email' and senha = '$senha'"; 
-
-$result = mysqli_query($conn, $query);
-
-$row = mysqli_num_rows($result);
-
-if($row == 1) {
-    $_SESSION['email'] = $email;
-    header('Location: presenca.php');
-    exit();
-}   else {
-    $_SESSION['msg'] = "<br><br><br><p style='color: red; text-align: center; font-size:18px';>Erro ao logar.</p>";
-    header('Location: index.php');
-    exit();
-}
+	session_start();
+	include_once("conexao.php");
+    $acessar = $_POST['acessar'];
+	if ($acessar){
+		$login = $_POST['ulogin'];
+		$senha = $_POST['senha'];
+		// echo "$email - $senha";
+		if((!empty($login)) AND (!empty($senha))){
+			//echo password_hash($senha, PASSWORD_DEFAULT);
+			$result_usuario = "SELECT ulogin, nome, email, senha FROM usuarios WHERE ulogin = '$login' LIMIT 1";
+			$resultado_usuario = mysqli_query($conn, $result_usuario);
+			if ($resultado_usuario){
+				$row_usuario = mysqli_fetch_assoc($resultado_usuario);
+				if(password_verify($senha, $row_usuario['senha'])){
+					$_SESSION['ulogin'] = $row_usuario['ulogin'];
+                    $_SESSION['nome'] = $row_usuario['nome'];
+                    $_SESSION['email'] = $row_usuario['email'];
+					header('location: presenca.php');
+				} else {
+					$_SESSION['msg'] = "<p style='font-size: 18px; color: red'>Login ou senha incorreta!</p>";
+					header('Location:../index.php');
+				}
+			}
+		} else {
+			$_SESSION['msg'] = "<p style='font-size: 18px; color: red'>Preencher login ou senha!</p>";
+			header('Location:../index.php');
+		}
+	} else {
+		$_SESSION['msg'] = "<p style='font-size: 18px; color: red'>Página não encontrada!</p>";
+		header('Location:../index.php');
+	}
 
 ?>

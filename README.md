@@ -1,4 +1,5 @@
-# <p align="center"> Sprint 1 </center>
+# <p align="center"> InoDevs </center>
+
 
 <hr>
 
@@ -29,6 +30,7 @@
 * Cadastro de Colaboradores :heavy_check_mark:
 * Cadastros do Quadro de Presença  :heavy_check_mark:
 * Página do Tático :heavy_check_mark:
+
 * Revisão e Correção :heavy_check_mark:
 * Validação do Produto :heavy_check_mark:
 <br>
@@ -39,11 +41,13 @@
 
 ## :game_die: Banco de Dados
 <h1 align="center"><img src = "https://github.com/Inodevs/Inodevs/blob/sprint-1/execu%C3%A7%C3%A3o/Execu%C3%A7%C3%A3oBD.gif" width="85%"></h1>
+
 <br>
 
 ## :chart_with_upwards_trend: Burndown
 *O gráfico abaixo mostra o desempenho da equipe na realização das tarefas referentes a Sprint:*
 <h1 align="center"><img src = "https://media.discordapp.net/attachments/826526043917647912/888988224737918986/IMG-20210919-WA0003.jpg" width="80%"></h1>
+
 <br>
 
 ## :mortar_board: Dev Team
@@ -52,7 +56,11 @@
 | :---         |     :---:      |     :---:     |          :---: |
 | Jonatas Mathias Dalló | Scrum Master | [@GitHub](https://github.com/Jonatas-Dallo) | [@LinkedIn](https://www.linkedin.com/in/jonatas-dall%C3%B3-147638206/)  |
 | Luíz Fernando Silva Habaeb | Product Owner | [@GitHub](https://github.com/luizhabaeb)  | [@LinkedIn](https://www.linkedin.com/in/luizhabaeb/)  |
-| Dante Demétrius Pereira Silva  | Desenvolvedor 1 |  - | [@LinkedIn](https://www.linkedin.com/in/dante-silva-0a2a09a8/) | 
+| Dante Demétrius Pereira Silva  | Desenvolvedor 1 | [@GitHub](https://github.com/dantesjc) | [@LinkedIn](https://www.linkedin.com/in/dante-silva-0a2a09a8/) | 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 885e800ddd423131181f42f2125e329d15e1459c
 | Gustavo Kenji Ando | Desenvolvedor 2 | [@GitHub](https://github.com/GustavoAndo) | [@LinkedIn](https://www.linkedin.com/in/gustavo-ando-054414209/) |
 | Júlia Maria Santos Barroso | Desenvolvedor 3 | [@GitHub](https://github.com/jumajubs) | [@LinkedIn](https://www.linkedin.com/in/j%C3%BAlia-maria-santos-850739188/) | 
 | Júlia Rafaela Teixeira Andrade Silva | Desenvolvedor 4 | [@GitHub](https://github.com/jufaela) | [@LinkedIn](https://www.linkedin.com/in/j%C3%BAlia-andrade-1195a121a) | 

@@ -1,5 +1,6 @@
 <?php
     session_start();
+    $nome = $_SESSION['nome'];
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -28,7 +29,7 @@
     $posto = 1;
     $colaborador = 1;
 ?>
-<div class="voltar3"><a href="../../html/controle.html">Retornar</a></div>
+<div class="voltar3"><a href="../controle.php">Retornar</a></div>
 <div class='principal'>
 <h1>Quadro de Presença</h1>
     <!-- Botão de deletar todas presenças com aviso de confirmação javascript-->
@@ -67,13 +68,8 @@
                     'Novembro',
                     'Dezembro'
                 );
-                if ($mes == 2){
-                    echo "<td id='titulo' colspan='28'>$mes_extenso[$mes]</td>";
-                } elseif ($mes == 4 ||  $mes == 6 || $mes == 9 || $mes == 11){
-                    echo "<td id='titulo' colspan='30'>$mes_extenso[$mes]</td>";
-                } else {
-                    echo "<td id='titulo' colspan='31'>$mes_extenso[$mes]</td>";
-                }
+                $data = date('t');
+                echo "<td id='titulo' colspan='$data'>$mes_extenso[$mes]</td>";
             ?>
             <td id="titulo" rowspan="2" colspan="2">Ação</td>
         </tr>
@@ -93,11 +89,9 @@
     do{
 ?>
         <tr class="item">
-
             <!-- Colocar o valor do posto de trabalho automaticamente + id diferente para cada posto de trabalho -->
             <td><div id="posto<?php echo $posto ?>"><div class="posto"><?php echo $linha_posto['posto_de_trabalho']?></div></div></td>
             <?php
-            
                 // Adicionando ao contador para criar um id diferente para o próximo posto
                 $posto++;
                 // Criando variáveis: $n2 para contar os dias e $dmnumero2 para adicionar o nome da coluna de dias
@@ -105,8 +99,24 @@
                 $dnumero2 = 'd' . $n2;
                 // while para percorrer do dia 1 até o dia atual, adicionando P, E ou F (caso não esteja nem com presença e nem seja um evento, será colocado falta automaticamente)
                 while ($n2<=date('d')){
-                    if ($linha_posto[$dnumero2] == 'P'){
+                    $sql_query_colaborador = $conn->query($sql_code_colaborador) or die($mysqli->error);
+                    $linha_colaborador = $sql_query_colaborador->fetch_assoc();
+                    $presenca = 0;
+                    do{
+                        if ($linha_posto['posto_de_trabalho'] == $linha_colaborador['posto_de_trabalho']){
+                            if($linha_colaborador[$dnumero2] == 'P'){
+                                $presenca++;
+                            }
+                        }
+                    }while($linha_colaborador = $sql_query_colaborador->fetch_assoc());
+                    if($presenca == $linha_posto['numero_colab']){
                         echo "<td class='green'>P</td>";
+                        $n2++;
+                        $dnumero2 = 'd' . $n2;
+                    }   
+                    elseif ($linha_posto[$dnumero2] == 'P'){
+                        echo "<td class='green'>P</td>";
+                        echo $linha_posto['numero_colab'];
                         $n2++;
                         $dnumero2 = 'd' . $n2;
                     } elseif ($linha_posto[$dnumero2] == 'E'){
@@ -142,12 +152,10 @@
             </td>
         </tr>  
     <?php
-        // Contador $k2 para percorrer todos os colaboradores ($k)
-        $k2 = 0;
         do{
             // A cada posto de trabalho, é adicionado na variavel $linha_colaborador os dados dos colaboradores para serem usados depois
             $sql_query_colaborador = $conn->query($sql_code_colaborador) or die($mysqli->error);
-            $linha_colaborador = $sql_query_colaborador->fetch_assoc();         
+            $linha_colaborador = $sql_query_colaborador->fetch_assoc();     
         do{
             // Verifica se o nome do posto é igual ao nome do posto do colaborador
             if ($linha_posto['posto_de_trabalho'] == $linha_colaborador['posto_de_trabalho']){

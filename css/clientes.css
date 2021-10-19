@@ -8,8 +8,8 @@
 }
 
 body{
-    margin:5px;
-    padding-top:2vh; 
+    margin:0px;
+    padding-top:0vh; 
     background-size: cover; 
 }
 
@@ -49,15 +49,15 @@ h1:after{
 
 input:not([type="checkbox"]){
     width: 95%;
-    padding: 10px;
-    margin-bottom: 22px;
+    padding: 0.5px;
+    margin-bottom: 15px;
 }
 
 #main-container {
-    width: 50%;
-    height: 72vh;
-    margin-left: 25%;
-    margin-top: 1.5%;
+    width: 55%;
+    height: 48vh;
+    margin-left: 16.5%;
+    margin-top: 1%;
     background-color: #FFF;
     border-radius: 10px;
     padding-top: 10px;
@@ -97,38 +97,35 @@ form {
 }
     
 .middle-box {
-    flex: 1 1 50%;
-    position: absolute;
-    width: 95%;
-    margin-top: 52%;
+    position:relative;
+    width: 100%;
+    margin: 0 auto;
 }   
     
 input[type="submit"] {
     background-color: #E5C03B;;
     padding: 8px 5px;
     font-size: 20px;  
-    margin-bottom: 10px;  
     border-radius: 20px;
     cursor: pointer;
 }
-    
 input[type="submit"]:hover{
     background: darkgoldenrod;
 }
-    
-input, label[type="fullbox"] {
-    width: 100%; 
-    outline: thin dotted;
-    outline: 0px auto;
-    outline-offset: 0px;
-}
-
 input:focus{
     border-color: #578fb3;
     outline: none;
 }
-    
+
+#btn-submit {
+    margin-left: 11vw;
+    width: 55%;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+
+}
 #btn-submit1 {
+    margin: 0px;
     background-color: #3d7292;
     color:#FFF;
 }
@@ -147,29 +144,6 @@ input {
     font-size: .9rem;
     margin-bottom: 40px;
 }
-     
-input:focus [type="lastname"] {
-    outline: none;
-    display: block;
-}
-       
-input:focus[type="checkbox"] {
-    display:inline-block;
-}
-    
-a {
-    color: #3579a0;
-    text-decoration: none;
-}
-    
-a.links{
-    display: none;
-}
-      
-.spacing{
-    height: 10%;
-    width: 10%;
-}
 
 .barra img{
     width: 4vw;
@@ -178,7 +152,7 @@ a.links{
 
 @media screen and (max-width: 480px) {     
     .left{
-        height: 135%;
+        height: 100%;
         width: 43px;
     }
         
@@ -197,8 +171,8 @@ a.links{
         }
             
     .middle-box {
-        width: 62%;
-        margin-top: 102.5%;
+        width: 90%;
+        margin-top: 6.5%;
     }   
             
     input[type="submit"] {
@@ -215,4 +189,10 @@ input:not([type="checkbox"]){
     padding: 10px;
     margin-bottom: 22px;
 }
+
+.half-box {
+    flex: 1 1 55%;
+    position: relative;
+}
+
 }

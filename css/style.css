@@ -3,7 +3,7 @@
   text-align: center;
   margin:0;
   font-family: Space, Helvetica, sans-serif, Mono, Arial;
-  height: 95.9vh;
+  height: 96vh;
   font-size: 10px;
 }
 
@@ -89,15 +89,15 @@
   * {
     height: 10vh;
   }
- 
+
   .blocos {
     float: top;
   }
-  
+
 .left {
   padding: 0px;
-  padding-top: 13vw;
-  padding-bottom: 20vw;
+  padding-top: 13vh;
+  padding-bottom: 13vw;
   width: 100vw;
   display: flex;
   font-size: 3em;
@@ -106,6 +106,7 @@
 }
 
 .right {
+  margin-top: 30vh;
   position: relative;
   width: 100vw;
   background-color: transparent;
@@ -113,7 +114,7 @@
 
 .referencia {
   position: relative;
-  margin-top: 140% ;
+  margin-top: 100% ;
   display: block;
   bottom: 0;
 }
@@ -122,14 +123,20 @@
 }
 
 #form, input {
+  margin-top: 1.2vh;
   height: 6vh;
   width: 40vw;
+  font-size: 1.5em;
 }
 #form, label {
   padding-right: 28vw;
 }
 
 #botao {
+  margin-top: 1vh;
   width: 25vw;
+  height: 7vh;
+  font-size: 1.8em;
 }
-}
+} 
+
