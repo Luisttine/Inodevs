@@ -6,8 +6,9 @@
     $login = $_POST['login'];
     $senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
     $email = $_POST['email'];
+    $nivel_acesso = $_POST['nivel_acesso'];
 
-    $result = "INSERT INTO usuarios (nome, ulogin, senha, email) VALUES ('$nome','$login','$senha','$email')";
+    $result = "INSERT INTO usuarios (nome, ulogin, senha, email, nivel_acesso) VALUES ('$nome','$login','$senha','$email', '$nivel_acesso')";
     $resultado = mysqli_query($conn, $result);
     
     if(mysqli_insert_id($conn)){
