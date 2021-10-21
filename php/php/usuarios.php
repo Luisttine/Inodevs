@@ -46,10 +46,20 @@
                         <label for="cpf">Email</label><br>
                         <input type="email" name="email" id="email" placeholder="Ex.:julia@gmail.com" required>
                     </div>
-                    <div class="full-box">
+                    <div class="half-box spacing">
                         <label for="funcao">Senha</label>
                         <input type="password" name="senha" id="senha" placeholder="Digite a senha" required>
-                    </div>   
+                    </div>  
+                    <div class="half-box">
+                            <label for="situacao">Nível de Acesso</label>
+                            <div class="table_cell table_title two">
+                                <select name="nivel_acesso" required>
+                                    <option value="" disabled selected hidden>Selecione o nível de acesso...</option>
+                                    <option value="1">Operacional</option>
+                                    <option value="2">Tático</option>  
+                                </select>
+                            </div>
+                        </div>    
                     <div class="middle-box">
                         <input id="btn-submit" type="submit" value="Cadastrar">   
                     </div><br><br>
