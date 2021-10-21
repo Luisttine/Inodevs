@@ -2,6 +2,13 @@
     session_start();
     $nome = $_SESSION['nome'];
     $nivel_acesso = $_SESSION['nivel_acesso'];
+    $ulogin = $_SESSION['ulogin'];
+    $email = $_SESSION['email'];
+    if($nivel_acesso == 2){
+        $nivel_ac = "Tático";
+    }else{
+        $nivel_ac= "Operacional";
+    }
     if(!empty($_SESSION['ulogin'])){
         echo <<<EOT
                 <!DOCTYPE html>
@@ -16,10 +23,17 @@
                     <title>Presença</title>
                 </head>
                 <body>
+                    <!-- jQuery -->
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
                     <div class="fundo" >
                         <div class="container">
                             <div class="op">
-                                $nome
+                                <div id="perfil">$nome</div>
+                                <div id="info" style = "display:none">
+                                Login: $ulogin <br>
+                                Email: $email <br>
+                                Nível de acesso: $nivel_ac <br>
+                                </div><br>
                             </div>
                                 <div class = "caixa">
                                     <div id= "meurelogio" class="relogio" onload="Tempo()"></div>
@@ -94,6 +108,9 @@
         btn.onclick = function() {
             sidebar.classList.toggle("active");
         }
+        $("div#perfil").click(function(){
+        $("div#info").slideToggle();
+        });
         </script>
         </body>
         </html>
