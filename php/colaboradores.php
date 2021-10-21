@@ -4,7 +4,9 @@
     $sql_code_posto = "SELECT * FROM presenca_posto";
     $sql_query_posto = $conn->query($sql_code_posto) or die($mysqli->error);
     $linha_posto = $sql_query_posto->fetch_assoc();
+    $nivel_acesso = $_SESSION['nivel_acesso'];
     if(!empty($_SESSION['ulogin'])){
+    if($nivel_acesso == 2){
         echo <<<EOT
             <!DOCTYPE html>
             <html lang="pt-br">
@@ -100,6 +102,10 @@
         </body>
         </html>
         EOT;
+    } else {
+        $_SESSION['msg'] = "<br><p style='color: red; font-size: 18px'> Você não tem permissão!</p>";
+        header('location: presenca.php');
+    }
     } else {
         $_SESSION['msg'] = "<p style='color: red; font-size: 18px'> Você precisa estar logado!</p>";
         header('location: ../index.php');

@@ -1,7 +1,9 @@
 <?php
     session_start();
     $nome = $_SESSION['nome'];
+    $nivel_acesso = $_SESSION['nivel_acesso'];
     if(!empty($_SESSION['ulogin'])){
+    if($nivel_acesso == 2){
         echo <<<EOT
         <!DOCTYPE html>
         <html lang="pt-br">
@@ -45,6 +47,20 @@
                 </div>
                 <ul class="nav_list">
                     <li>
+                    <a href="../php/presenca.php">
+                        <i class='bx bx-calendar'></i>
+                        <span class="links_name">Presenças</span>
+                    </a>
+                    <span class="tooltip">Presenças</span>
+                    </li>
+                    <li>
+                    <a href="#">
+                        <i class='bx bx-check-square' ></i>
+                        <span class="links_name">Perfis</span>
+                    </a>
+                    <span class="tooltip">Perfis</span>
+                    </li>
+                    <li>
                         <a href="../php/quadropresenca/quadropresenca.php">
                             <i class='bx bx-clipboard' ></i>
                             <span class="links_name">Relatório</span>
@@ -58,20 +74,6 @@
                         </a>
                         <span class="tooltip">Edições</span>
                     </li> 
-                    <li>
-                        <a href="../php/presenca.php">
-                            <i class='bx bx-calendar'></i>
-                            <span class="links_name">Presenças</span>
-                        </a>
-                        <span class="tooltip">Presenças</span>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class='bx bx-check-square' ></i>
-                            <span class="links_name">Perfis</span>
-                        </a>
-                        <span class="tooltip">Perfis</span>
-                    </li>
                     <li>
                         <a href="../php/sair.php">
                             <i class='bx bx-exit'></i>
@@ -91,6 +93,10 @@
         </body>
         </html>
         EOT;
+    } else {
+        $_SESSION['msg'] = "<br><p style='color: red; font-size: 18px'> Você não tem permissão!</p>";
+        header('location: presenca.php');
+    }
     } else {
         $_SESSION['msg'] = "<p style='color: red; font-size: 18px'> Você precisa estar logado!</p>";
         header('location: ../index.php');

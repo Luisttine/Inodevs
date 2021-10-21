@@ -1,7 +1,9 @@
 <?php
     session_start();
     $nome = $_SESSION['nome'];
+    $nivel_acesso = $_SESSION['nivel_acesso'];
     if(!empty($_SESSION['ulogin'])){
+    if($nivel_acesso == 2){
         echo <<<EOT
         <!DOCTYPE html>
         <html lang="pt-br">
@@ -26,6 +28,11 @@
             // Início do contador para mecânica de clicar e aparecer
             $posto = 1;
             $colaborador = 1;
+        // Mensagem de sucesso ou falha de alguma ação (editar/deletar)
+        if(isset($_SESSION['msg'])){
+            echo $_SESSION['msg'];
+            unset($_SESSION['msg']);
+        }
         echo <<<EOT
         <div class="voltar3"><a href="../controle.php">Retornar</a></div>
         <div class='principal'>
@@ -36,11 +43,6 @@
             <!-- Input de pesquisa -->
                 <input type="text" name="pesquisar" id="pesquisar" placeholder="Pesquisar posto de trabalho..." onkeyup="pesquisar()"> 
         EOT; 
-                // Mensagem de sucesso ou falha de alguma ação (editar/deletar)
-                if(isset($_SESSION['msg'])){
-                        echo $_SESSION['msg'];
-                        unset($_SESSION['msg']);
-                    }
         echo <<<EOT
             <!-- Início do quadro de presenças -->
             <table id="tabela">
@@ -104,7 +106,7 @@
                                     }
                                 }
                             }while($linha_colaborador = $sql_query_colaborador->fetch_assoc());
-                            if($presenca == $linha_posto['numero_colab']){
+                            if($presenca >= $linha_posto['numero_colab']){
                                 echo "<td class='green'>P</td>";
                                 $n2++;
                                 $dnumero2 = 'd' . $n2;
@@ -251,6 +253,10 @@
             </body>
             </html>
             EOT;
+    } else {
+        $_SESSION['msg'] = "<br><p style='color: red; font-size: 18px'> Você não tem permissão!</p>";
+        header('location: ../presenca.php');
+    }
     } else {
         $_SESSION['msg'] = "<p style='color: red; font-size: 18px'> Você precisa estar logado!</p>";
         header('location: ../../index.php');

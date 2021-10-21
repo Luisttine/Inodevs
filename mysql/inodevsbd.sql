@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 19-Out-2021 às 16:04
+-- Tempo de geração: 21-Out-2021 às 14:06
 -- Versão do servidor: 5.7.31
 -- versão do PHP: 7.3.21
 
@@ -35,7 +35,14 @@ CREATE TABLE IF NOT EXISTS `alocacoes` (
   `alo_colab` int(10) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `alo_colab` (`alo_colab`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+--
+-- Extraindo dados da tabela `alocacoes`
+--
+
+INSERT INTO `alocacoes` (`associacao`, `tipo_de_cobertura`, `id`, `alo_colab`) VALUES
+('Gerente', 'Fixo', 1, NULL);
 
 -- --------------------------------------------------------
 
@@ -280,6 +287,7 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   `ulogin` int(10) NOT NULL AUTO_INCREMENT,
   `senha` varchar(100) NOT NULL,
   `email` varchar(30) NOT NULL,
+  `nivel_acesso` int(11) DEFAULT NULL,
   PRIMARY KEY (`ulogin`),
   UNIQUE KEY `nome` (`nome`)
 ) ENGINE=InnoDB AUTO_INCREMENT=20210011 DEFAULT CHARSET=utf8;
@@ -288,17 +296,17 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
 -- Extraindo dados da tabela `usuarios`
 --
 
-INSERT INTO `usuarios` (`nome`, `ulogin`, `senha`, `email`) VALUES
-('Gustavo Kenji Ando', 20210001, '$2y$10$3rWb0G5ix.yCFrH.vr236ONAh.sP6NY6sJ1E1cackxk74HpURspJ2', 'gustavo@gmail.com'),
-('KauÃ£ Gustavo Rodrigues RenÃ³', 20210002, '$2y$10$Mv1dvyTdFgNjuoi2awdVG.4dma9Hok9zvGVjUcUxkbMRay9xVmQjS', 'kaua@gmail.com'),
-('JÃºlia Rafaela Teixeira Andrade Silva', 20210003, '$2y$10$XShpiaEo9/n0t.2bBCv6I.uO9l/YCK/pg.5EIswGIcjuJJL8GLA3W', 'julia@gmail.com'),
-('Maria Eduarda Macedo Braga', 20210004, '$2y$10$Kfiec0b1R52qTlBJK1N9reJTuf0dQBYQri6i/1FFCNU9dzDJrL24G', 'maria@gmail.com'),
-('JÃºlia Maria Santos Barroso', 20210005, '$2y$10$ar5upippANQVeALmUDBA2OoQeIKruZ6a7rS.ZnVJH4vsDEYaqw/5K', 'juliam@gmail.com'),
-('LuÃ­s Henrique Ferreira Souza', 20210006, '$2y$10$EUibU8bUZpA0dMM/cBnXyOhIUTX5FB5riU7151Z1IwJ/67hfYa/VS', 'luis@gmail.com'),
-('Luiz Fernando Silva Habaeb', 20210007, '$2y$10$MuGdRWza2FsjtcU36lmdgOdhnLDrRNGYbuffLLuzRNVHYT9Js/I5.', 'luiz@gmail.com'),
-('Dante Demetrius Pereira Silva', 20210008, '$2y$10$27pJ3hK2OCTr8xpg6XNpmuaLx4Ms/xQR9tdrZbPPOeXP//p7FO2Yq', 'dante@gmail.com'),
-('JoÃ£o Vitor da Silva', 20210009, '$2y$10$.OHpUdT4aURVaOaUetaOUuxwciYbZ9AfLBgl/KGbKBGY98scBjesG', 'joao@gmail.com'),
-('Pedro Henrique Alves', 20210010, '$2y$10$muQPXNdTQYmwWLQ2YXh8ZOXujftILypdHnQGOncnRA6.E4lj1O.vi', 'pedro@gmail.com');
+INSERT INTO `usuarios` (`nome`, `ulogin`, `senha`, `email`, `nivel_acesso`) VALUES
+('Gustavo Kenji Ando', 20210001, '$2y$10$3rWb0G5ix.yCFrH.vr236ONAh.sP6NY6sJ1E1cackxk74HpURspJ2', 'gustavo@gmail.com', 2),
+('KauÃ£ Gustavo Rodrigues RenÃ³', 20210002, '$2y$10$Mv1dvyTdFgNjuoi2awdVG.4dma9Hok9zvGVjUcUxkbMRay9xVmQjS', 'kaua@gmail.com', 2),
+('JÃºlia Rafaela Teixeira Andrade Silva', 20210003, '$2y$10$XShpiaEo9/n0t.2bBCv6I.uO9l/YCK/pg.5EIswGIcjuJJL8GLA3W', 'julia@gmail.com', 1),
+('Maria Eduarda Macedo Braga', 20210004, '$2y$10$Kfiec0b1R52qTlBJK1N9reJTuf0dQBYQri6i/1FFCNU9dzDJrL24G', 'maria@gmail.com', 1),
+('JÃºlia Maria Santos Barroso', 20210005, '$2y$10$ar5upippANQVeALmUDBA2OoQeIKruZ6a7rS.ZnVJH4vsDEYaqw/5K', 'juliam@gmail.com', 1),
+('LuÃ­s Henrique Ferreira Souza', 20210006, '$2y$10$EUibU8bUZpA0dMM/cBnXyOhIUTX5FB5riU7151Z1IwJ/67hfYa/VS', 'luis@gmail.com', 1),
+('Luiz Fernando Silva Habaeb', 20210007, '$2y$10$MuGdRWza2FsjtcU36lmdgOdhnLDrRNGYbuffLLuzRNVHYT9Js/I5.', 'luiz@gmail.com', 1),
+('Dante Demetrius Pereira Silva', 20210008, '$2y$10$27pJ3hK2OCTr8xpg6XNpmuaLx4Ms/xQR9tdrZbPPOeXP//p7FO2Yq', 'dante@gmail.com', 1),
+('JoÃ£o Vitor da Silva', 20210009, '$2y$10$.OHpUdT4aURVaOaUetaOUuxwciYbZ9AfLBgl/KGbKBGY98scBjesG', 'joao@gmail.com', 1),
+('Pedro Henrique Alves', 20210010, '$2y$10$PzacmqHYYJrUTncH.t/saef.m8L19U/BMVT/MMg6PvDsYi5iXWFxW', 'pedro@gmail.com', 1);
 
 --
 -- Restrições para despejos de tabelas
