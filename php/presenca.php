@@ -57,18 +57,18 @@
                 if ($nivel_acesso == 2){
                 echo <<<EOT
                 <li>
-                    <a href="../php/quadropresenca/quadropresenca.php">
-                        <i class='bx bx-clipboard' ></i>
-                        <span class="links_name">Relatório</span>
-                    </a>
-                    <span class="tooltip">Relatório</span>
-                </li>
-                <li>
                 <a href="../php/controle.php">
                     <i class='bx bx-check-square' ></i>
                     <span class="links_name">Perfis</span>
                 </a>
                 <span class="tooltip">Perfis</span>
+                </li>
+                <li>
+                    <a href="../php/quadropresenca/quadropresenca.php">
+                        <i class='bx bx-clipboard' ></i>
+                        <span class="links_name">Relatório</span>
+                    </a>
+                    <span class="tooltip">Relatório</span>
                 </li>
                 <li>
                 <a href="../html/edicoes.html">

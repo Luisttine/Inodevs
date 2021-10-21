@@ -1,13 +1,14 @@
 <?php
     session_start();
     include_once("../conexao.php");
-    $id = $_GET['id'];
+    $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
     $result_colaborador = "SELECT * FROM presenca where id='$id'";
     $resultado_colaborador = mysqli_query($conn, $result_colaborador);
     $linha_colaborador = mysqli_fetch_assoc($resultado_colaborador);
     $nivel_acesso = $_SESSION['nivel_acesso'];
     if(!empty($_SESSION['ulogin'])){
     if($nivel_acesso == 2){
+    if(!empty($id)){
     echo <<<EOT
                 <!DOCTYPE html>
                 <html lang="pt-br">
@@ -146,6 +147,10 @@
                 </body>
                 </html> 
                 EOT;
+    } else {
+        $_SESSION['msg'] = "<br><p style='color: red; font-size: 18px; text-align: center;'> É necessário adicionar o id do colaborador!</p>";
+        header('location: quadropresenca.php');
+    }
     } else {
         $_SESSION['msg'] = "<br><p style='color: red; font-size: 18px'> Você não tem permissão!</p>";
         header('location: ../presenca.php');
