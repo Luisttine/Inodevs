@@ -204,3 +204,8 @@ a:hover{
   }
 
 }
+
+#perfil:hover{
+  color:#ff0000;
+  cursor: pointer;
+}

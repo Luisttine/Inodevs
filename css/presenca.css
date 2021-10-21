@@ -141,7 +141,7 @@
     text-align: right;
   }
 
-  @media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
 
     * {
         height: 13vh;
@@ -168,7 +168,11 @@
         width: 28vw;
         border-radius: 50px;
         font-size: 1.4em;
-      }
     }
-    
+}
+
+#perfil:hover{
+    color:#ff0000;
+    cursor: pointer;
+}
   
