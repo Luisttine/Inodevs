@@ -1,5 +1,9 @@
 <?php
     session_start();
+    include_once("conexao.php");
+    $sql_code = "SELECT * FROM colaboradores";
+    $sql_query = $conn->query($sql_code) or die($mysqli->error);
+    $linha = $sql_query->fetch_assoc();
     $nivel_acesso = $_SESSION['nivel_acesso'];
     if(!empty($_SESSION['ulogin'])){
     if($nivel_acesso == 2){
@@ -21,9 +25,19 @@
                 <div id="main-container">
                     <h1>Alocações</h1><BR>
                     <form id="register-form" method="POST" action="bdalocacoes.php">
-                        <div class="full-box">
-                            <label for="name">Associação do colaborador com o posto</label>
-                            <input type="text" name="associacao" id="associacao"  required>
+                        <div class="half-box">
+                        <label for="name">Nome</label><br>
+                        <select name="nome" required> 
+                                <option value="" disabled selected hidden>Selecione um colaborador...</option>
+        EOT;
+?>
+                            <?php
+                                do{
+                                    $linha_colaborador = $linha['nome_completo'];       
+                                    echo "<option>$linha_colaborador</option>";
+                                }while($linha=$sql_query->fetch_assoc());   
+            echo <<<EOT
+                        </select>
                         </div>
                         <div class="half-box">
                             <label for="tipo_de_cobertura">Tipo de cobertura</label>
@@ -35,6 +49,10 @@
                                 </select>
                             </div>
                         </div>
+                        <div class="full-box">
+                        <label for="cpf"Associação do colaborador com o Posto</label><br>
+                        <input type="text" name="associacao" id="associacao" placeholder="Gerente" required>
+                    </div>
             <br><br>
                         <div class="middle-box">
                             <input id="btn-submit" type="submit" value="Cadastrar">
@@ -60,4 +78,4 @@
         $_SESSION['msg'] = "<p style='color: red; font-size: 18px'> Você precisa estar logado!</p>";
         header('location: ../index.php');
     }
-?>
+                            ?>
