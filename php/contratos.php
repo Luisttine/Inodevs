@@ -1,5 +1,9 @@
 <?php
     session_start();
+    include_once("conexao.php");
+    $sql_code = "SELECT * FROM clientes";
+    $sql_query = $conn->query($sql_code) or die($mysqli->error);
+    $linha = $sql_query->fetch_assoc();
     $nivel_acesso = $_SESSION['nivel_acesso'];
     if(!empty($_SESSION['ulogin'])){
     if($nivel_acesso == 2){
@@ -26,16 +30,27 @@
                         <input type="text" name="numero" placeholder="Deixar em branco" required>
                     </div>
                     <div class="half-box spacing">
-                        <label for="endereço">Posto de trabalho associados ao contrato e suas quantidades de vagas</label>
-                        <input type="text" name="posto_trabalho" placeholder="Ex: Gerente - fixo - 5 vagas" required>
+                        <label for="endereço">Posto de trabalho associados ao contrato e suas respectivas vagas</label>
+                        <input type="text" name="posto_trabalho" placeholder="Ex: Setor A - fixo - 5 vagas" required>
                     </div>
                     <div class="half-box spacing">
                         <label for="endereço">Valor</label>
                         <input type="number" name="valor" placeholder="Ex: 1.100,00" required>
                     </div>
-                    <div class="half-box spacing">
-                        <label for="endereço">Cliente</label>
-                        <input type="text" name="cliente" placeholder="Ex: Vó Maria Felix Ltda." required>
+                    <div class="half-box">
+                        <label for="name">Cliente</label><br>
+                        <select name="nome" required> 
+                                <option value="" disabled selected hidden>Selecione um cliente...</option>
+        EOT;
+?>
+                                <?php
+                                    do{
+                                            $linha_cliente = $linha['nome_fantasia'];       
+                                            echo "<option>$linha_cliente</option>";
+                                    }while($linha=$sql_query->fetch_assoc());   
+
+                                echo <<<EOT
+                        </select>
                     </div>
                     <div class="half-box spacing">
                         <label for="endereço">Escala</label>
