@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Space, Helvetica, sans-serif, Mono, Arial;
+}
+
+h1 {
+    padding-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.navabas{
+    top: -50px;
+    margin: 100px;
+    position: relative;
+}
+
+.navabas ul{
+    list-style: none;
+}
+
+.navabas ul li{
+    float: left;
+}
+
+.navabas label{
+    width: 190px;
+    padding: 25px;
+    background-color: rgba(0, 35, 57, 0.521);;
+    display: block;
+    color: white;
+    cursor: pointer;
+    border-left: 1px solid black;
+}
+
+.radio_aba:checked ~ label{
+    background-color: rgba(0, 35, 57, 0.83);
+}
+
+.radio_aba{
+    display: none;
+}
+
+.content{
+    border-top: 5px solid rgba(0, 35, 57, 0.83);
+    display: none;
+    position: absolute;
+    width: 1140px;
+    height: 600px;
+    left: 0;
+}
+
+.radio_aba:checked ~ .content{
+    display: block;
+}
+
+.titulo{
+    background: lightslategray;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+table {
+    border: solid 1px black;
+    margin: auto;
+    border-collapse: collapse;
+    border-radius: 10px;
+    margin-top: 1%;
+}
+
+td {
+    border: solid 1px black;
+    padding: 5px;
+    background: lightgray;
+}

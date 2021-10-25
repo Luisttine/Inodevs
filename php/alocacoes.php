@@ -50,8 +50,9 @@
                             </div>
                         </div>
                         <div class="full-box">
-                        <label for="cpf"Associação do colaborador com o Posto</label><br>
-                    </div>
+                            <label for="cpf">Associação do colaborador com o Posto</label><br>
+                            <input type="text" name="associacao" id="associacao" placeholder="Gerente" required>
+                        </div>
             <br><br>
                         <div class="middle-box">
                             <input id="btn-submit" type="submit" value="Cadastrar">
