@@ -96,6 +96,7 @@ form {
     position:relative;
     width: 50vw;
     margin: 0 auto;
+    margin-top: 3vh;
 }   
     
 input[type="submit"] {
