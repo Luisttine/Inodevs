@@ -99,8 +99,9 @@ form {
 .middle-box {
     flex: 1 1 50%;
     position: absolute;
-    width: 95%;
-    margin-top: 52%;
+    width: 60%;
+    margin-top: 55%;
+    margin-left: 16%;
 }   
     
 input[type="submit"] {
@@ -178,7 +179,7 @@ a.links{
 
 @media screen and (max-width: 480px) {     
     .left{
-        height: 135%;
+        height: 150vh;
         width: 43px;
     }
         
@@ -186,33 +187,37 @@ a.links{
         width: 75%;
         height: 73vh;
         margin-left: 70px;
-        margin-top: 0.5vh;
-        background-color: #FFF;
-        border-radius: 10px;
-        padding-top: 10px;
+        margin-top: 0;
+        padding-top: 0;
         padding-right: 20px;
-        padding-left: 35px;
-        position: sticky;
+        padding-left: 10px;
         border: 0em ;
-        }
+    }
             
     .middle-box {
         width: 62%;
-        margin-top: 102.5%;
+        margin-top: 125.5%;
     }   
-            
+        
+    .full-box {
+        flex: 1 1 55%;
+        position: relative;
+    }
+
+    input {
+    border-bottom: 2px solid #323232;
+    font-size: .7rem;
+    padding: 5px;
+    }        
     input[type="submit"] {
         font-size: 1em;  
     }
-
     #btn-submit1 {
         margin-top: 0;
     }
-
-    
-input:not([type="checkbox"]){
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 22px;
-}
+    input:not([type="checkbox"]){
+        width: 97%;
+        padding-right: 20px;
+        margin-bottom: 1vh;
+    }
 }

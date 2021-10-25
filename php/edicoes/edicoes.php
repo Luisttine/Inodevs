@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../../css/edicoes.css">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../../css/sidebar.css">
-    <title>Ediçõees</title>
+    <title>Edições</title>
     <?php
         session_start();
         include("../conexao.php");
