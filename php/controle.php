@@ -82,7 +82,7 @@
                         <span class="tooltip">Relatório</span>
                     </li>
                     <li>
-                        <a href="../html/edicoes.html">
+                        <a href="../php/edicoes/edicoes.php">
                             <i class='bx bx-edit-alt'></i>
                             <span class="links_name">Edições</span>
                         </a>

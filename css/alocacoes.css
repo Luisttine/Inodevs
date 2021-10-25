@@ -75,6 +75,7 @@ form {
 .full-box {
     flex: 1 1 100%;
     position: relative;
+    margin-top: 2vw;
 }
     
 .half-box {
