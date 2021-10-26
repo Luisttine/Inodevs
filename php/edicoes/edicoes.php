@@ -32,9 +32,7 @@
     ?>
 </head>
 <body>
-
     <h1>Edições</h1>
-
     <nav class="navabas">
             <ul>
                 <li>
@@ -59,9 +57,9 @@
                             <td><?php echo $linha['email'] ?></td>
                             <td><?php echo $linha['nivel_acesso'] ?></td></td>
                             <td>
-                                <a href="editar.php?id=<?php echo $linha['ulogin'] ?>" id="editar">Editar </a> |
+                                <a href="editarusuario.php?id=<?php echo $linha['ulogin'] ?>" class="editar">Editar </a> |
                                 <a href="javascript: if(confirm('Tem certeza que deseja deletar o usuário <?php echo $linha['nome'] ?>?')) 
-                                location.href='processoapagar.php?id=<?php echo $linha['ulogin'] ?>';" id="deletar"> Deletar</a>
+                                location.href='deletarusuario.php?id=<?php echo $linha['ulogin'] ?>';" class="deletar"> Deletar</a>
                              </td>
                         </tr>
                 <?php
@@ -72,7 +70,7 @@
                     </div>
                 </li>
                 <li>
-                    <input type="radio" name="aba" class="radio_aba" id="aba2">
+                    <input type="radio" name="aba" class="radio_aba" id="aba2" <?php if(isset($_SESSION['checked'])){if ($_SESSION['checked'] == 'contrato'){echo 'checked';}}?>>
                     <label for="aba2">Contratos</label>
                     <div class="content">
                         <article>
@@ -95,9 +93,9 @@
                             <td><?php echo $linha_contrato['posto_trabalho'] ?></td>
                             <td><?php echo $linha_contrato['escala'] ?></td>
                             <td>
-                                <a href="editar.php?id=<?php echo $linha['numero'] ?>" id="editar">Editar </a> |
-                                <a href="javascript: if(confirm('Tem certeza que deseja deletar o usuário <?php echo $linha['nome'] ?>?')) 
-                                location.href='processoapagar.php?id=<?php echo $linha['numero'] ?>';" id="deletar"> Deletar</a>
+                                <a href="editarcontrato.php?id=<?php echo $linha_contrato['numero'] ?>" class="editar">Editar </a> |
+                                <a href="javascript: if(confirm('Tem certeza que deseja deletar o contrato de número <?php echo $linha_contrato['numero'] ?>?')) 
+                                location.href='deletarcontrato.php?id=<?php echo $linha_contrato['numero'] ?>';" class="deletar"> Deletar</a>
                              </td>
                         </tr>
                 <?php
@@ -108,7 +106,7 @@
                     </div>
                 </li>
                 <li>
-                    <input type="radio" name="aba" class="radio_aba" id="aba3">
+                    <input type="radio" name="aba" class="radio_aba" id="aba3" <?php if(isset($_SESSION['checked'])){if ($_SESSION['checked'] == 'colaboradores'){echo 'checked';}}?>>
                     <label for="aba3">Colaboradores</label>
                     <div class="content">
                         <article>
@@ -139,9 +137,9 @@
                             <td><?php echo $linha_colaborador['tipo_cobertura'] ?></td>
                             <td><?php echo $linha_colaborador['posto_trabalho'] ?></td>
                             <td>
-                                <a href="editar.php?id=<?php echo $linha['matricula'] ?>" id="editar">Editar </a> |
-                                <a href="javascript: if(confirm('Tem certeza que deseja deletar o usuário <?php echo $linha['nome'] ?>?')) 
-                                location.href='processoapagar.php?id=<?php echo $linha['matricula'] ?>';" id="deletar"> Deletar</a>
+                                <a href="editarcolaborador.php?id=<?php echo $linha_colaborador['matricula'] ?>" class="editar">Editar </a>
+                                <a href="javascript: if(confirm('Tem certeza que deseja deletar o colaborador <?php echo $linha_colaborador['nome_completo'] ?>?')) 
+                                location.href='deletarcolaborador.php?id=<?php echo $linha_colaborador['matricula'] ?>';" class="deletar"> Deletar</a>
                              </td>
                         </tr>
                 <?php
@@ -152,7 +150,7 @@
                     </div>
                 </li>
                 <li>
-                    <input type="radio" name="aba" class="radio_aba" id="aba4">
+                    <input type="radio" name="aba" class="radio_aba" id="aba4" <?php if(isset($_SESSION['checked'])){if ($_SESSION['checked'] == 'cliente'){echo 'checked';}}?>>
                     <label for="aba4">Clientes</label>
                     <div class="content">
                         <article>
@@ -175,9 +173,9 @@
                             <td><?php echo $linha_clientes['endereco'] ?></td>
                             <td><?php echo $linha_clientes['contato'] ?></td>
                             <td>
-                                <a href="editar.php?id=<?php echo $linha['cnpj'] ?>" id="editar">Editar </a> |
-                                <a href="javascript: if(confirm('Tem certeza que deseja deletar o usuário <?php echo $linha['nome'] ?>?')) 
-                                location.href='processoapagar.php?id=<?php echo $linha['cnpj'] ?>';" id="deletar"> Deletar</a>
+                                <a href="editarcliente.php?id=<?php echo $linha_clientes['id'] ?>" class="editar">Editar </a> |
+                                <a href="javascript: if(confirm('Tem certeza que deseja deletar o cliente <?php echo $linha_clientes['nome_fantasia'] ?>?')) 
+                                location.href='deletarcliente.php?id=<?php echo $linha_clientes['id'] ?>';" class="deletar"> Deletar</a>
                              </td>
                         </tr>
                 <?php
@@ -188,7 +186,7 @@
                     </div>
                 </li>
                 <li>
-                    <input type="radio" name="aba" class="radio_aba" id="aba5">
+                    <input type="radio" name="aba" class="radio_aba" id="aba5" <?php if(isset($_SESSION['checked'])){if ($_SESSION['checked'] == 'posto'){echo 'checked';}}?>>
                     <label for="aba5">Postos de Trabalho</label>
                     <div class="content">
                     <article>
@@ -211,9 +209,9 @@
                             <td><?php echo $linha_posto['numero_colab'] ?></td>
                             <td><?php echo $linha_posto['id'] ?></td>
                             <td>
-                                <a href="editar.php?id=<?php echo $linha['id'] ?>" id="editar">Editar </a> |
-                                <a href="javascript: if(confirm('Tem certeza que deseja deletar o usuário <?php echo $linha['nome'] ?>?')) 
-                                location.href='processoapagar.php?id=<?php echo $linha['id'] ?>';" id="deletar"> Deletar</a>
+                                <a href="editarposto.php?id=<?php echo $linha_posto['id'] ?>" class="editar">Editar </a> |
+                                <a href="javascript: if(confirm('Tem certeza que deseja deletar o posto de trabalho <?php echo $linha_posto['nome_posto'] ?>?')) 
+                                location.href='deletarposto.php?id=<?php echo $linha_posto['id'] ?>';" class="deletar"> Deletar</a>
                              </td>
                         </tr>
                 <?php
@@ -224,7 +222,7 @@
                     </div>
                 </li>
                 <li>
-                    <input type="radio" name="aba" class="radio_aba" id="aba6">
+                    <input type="radio" name="aba" class="radio_aba" id="aba6" <?php if(isset($_SESSION['checked'])){if ($_SESSION['checked'] == 'alocacao'){echo 'checked';}}?>>
                     <label for="aba6">Alocações</label>
                     <div class="content">
                     <article>
@@ -245,9 +243,9 @@
                             <td><?php echo $linha_alocacoes['tipo_de_cobertura'] ?></td>
                             <td><?php echo $linha_alocacoes['id'] ?></td>
                             <td>
-                                <a href="editar.php?id=<?php echo $linha['id'] ?>" id="editar">Editar </a> |
-                                <a href="javascript: if(confirm('Tem certeza que deseja deletar o usuário <?php echo $linha['nome'] ?>?')) 
-                                location.href='processoapagar.php?id=<?php echo $linha['id'] ?>';" id="deletar"> Deletar</a>
+                                <a href="editaralocacao.php?id=<?php echo $linha_alocacoes['id'] ?>" class="editar">Editar </a> |
+                                <a href="javascript: if(confirm('Tem certeza que deseja deletar o usuário <?php echo $linha_alocacoes['nome'] ?>?')) 
+                                location.href='deletaralocacao.php?id=<?php echo $linha_alocacoes['id'] ?>';" class="deletar"> Deletar</a>
                              </td>
                         </tr>
                 <?php
@@ -309,5 +307,8 @@
                 sidebar.classList.toggle("active");
             }
         </script>
+        <?php
+            unset($_SESSION['checked']);
+        ?>
 </body>
 </html>

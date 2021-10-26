@@ -75,3 +75,15 @@ td {
     padding: 5px;
     background: lightgray;
 }
+
+.deletar {
+    text-decoration: none;
+    font-weight: bold;
+    color: red;
+}
+
+.editar {
+    text-decoration: none;
+    font-weight: bold;
+    color: blue;
+}
