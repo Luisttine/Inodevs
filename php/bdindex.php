@@ -17,6 +17,9 @@
                     $_SESSION['nome'] = $row_usuario['nome'];
                     $_SESSION['email'] = $row_usuario['email'];
 					$_SESSION['nivel_acesso'] = $row_usuario['nivel_acesso'];
+					if(isset($_POST['manter'])){
+                        $_SESSION['manter'] =  $_POST['manter'];
+                    }
 					header('location: presenca.php');
 				} else {
 					$_SESSION['msg'] = "<p style='font-size: 18px; color: red'>Login ou senha incorreta!</p>";

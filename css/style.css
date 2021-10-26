@@ -140,3 +140,12 @@
 }
 } 
 
+
+input[type="checkbox"]{
+  width: 3%;
+  margin-left: 15%;
+}
+
+.manter{
+  font-size: 17px;
+}
