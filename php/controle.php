@@ -54,49 +54,49 @@
                     </div>
                 <section>
             </div>
-            <div class="sidebar">
-                <div class="logo_content">
-                    <i class='bx bx1-c-plus-plus'></i>
-                    <i class='bx bx-menu' id="btn"></i>
-                </div>
-                <ul class="nav_list">
-                    <li>
-                    <a href="../php/presenca.php">
-                        <i class='bx bx-calendar'></i>
-                        <span class="links_name">Presenças</span>
-                    </a>
-                    <span class="tooltip">Presenças</span>
-                    </li>
-                    <li>
-                    <a href="#">
-                        <i class='bx bx-check-square' ></i>
-                        <span class="links_name">Perfis</span>
-                    </a>
-                    <span class="tooltip">Perfis</span>
-                    </li>
-                    <li>
-                        <a href="../php/quadropresenca/quadropresenca.php">
-                            <i class='bx bx-clipboard' ></i>
-                            <span class="links_name">Relatório</span>
+                    <div class="sidebar">
+                    <div class="logo_content">
+                        <i class='bx bx1-c-plus-plus'></i>
+                        <i class='bx bx-menu' id="btn"></i>
+                    </div>
+                    <ul class="nav_list">
+                        <li>
+                        <a href="../php/presenca.php">
+                        <i class='bx bx-check-square' id="btn1"></i>
+                            <span class="links_name">Presenças</span>
                         </a>
-                        <span class="tooltip">Relatório</span>
-                    </li>
-                    <li>
-                        <a href="../php/edicoes/edicoes.php">
-                            <i class='bx bx-edit-alt'></i>
-                            <span class="links_name">Edições</span>
+                        <span class="tooltip">Presenças</span>
+                        </li>
+                        <li>
+                        <a href="../php/controle.php">
+                        <i class='bx bx-user' id="btn1"></i>
+                            <span class="links_name">Perfis</span>
                         </a>
-                        <span class="tooltip">Edições</span>
-                    </li> 
-                    <li>
-                        <a href="../php/sair.php">
-                            <i class='bx bx-exit'></i>
-                            <span class="links_name">Sair</span>
-                        </a>
-                        <span class="tooltip">Sair</span>
-                    </li>
-                </ul>
-            </div>
+                        <span class="tooltip">Perfis</span>
+                        </li>
+                        <li>
+                            <a href="../php/quadropresenca/quadropresenca.php">
+                                <i class='bx bx-clipboard' id="btn1"></i>
+                                <span class="links_name">Relatório</span>
+                            </a>
+                            <span class="tooltip">Relatório</span>
+                        </li>
+                        <li>
+                            <a href="../php/edicoes/edicoes.php">
+                                <i class='bx bx-edit-alt' id="btn1"></i>
+                                <span class="links_name">Edições</span>
+                            </a>
+                            <span class="tooltip">Edições</span>
+                        </li> 
+                        <li>
+                            <a href="../sair.php">
+                                <i class='bx bx-exit' id="btn1"></i>
+                                <span class="links_name">Sair</span>
+                            </a>
+                            <span class="tooltip">Sair</span>
+                        </li>
+                    </ul>
+        </div>
             <script>
                 let btn = document.querySelector("#btn");
                 let sidebar = document.querySelector(".sidebar");

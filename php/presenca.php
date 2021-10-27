@@ -62,7 +62,7 @@
                 <ul class="nav_list">
                     <li>
                         <a href="../php/presenca.php">
-                            <i class='bx bx-calendar'></i>
+                        <i class='bx bx-check-square' id="btn1"></i>
                             <span class="links_name">Presenças</span>
                         </a>
                         <span class="tooltip">Presenças</span>
@@ -72,21 +72,21 @@
                 echo <<<EOT
                 <li>
                 <a href="../php/controle.php">
-                    <i class='bx bx-check-square' ></i>
+                    <i class='bx bx-user' id="btn1"></i>
                     <span class="links_name">Perfis</span>
                 </a>
                 <span class="tooltip">Perfis</span>
                 </li>
                 <li>
                     <a href="../php/quadropresenca/quadropresenca.php">
-                        <i class='bx bx-clipboard' ></i>
+                        <i class='bx bx-clipboard' id="btn1"></i>
                         <span class="links_name">Relatório</span>
                     </a>
                     <span class="tooltip">Relatório</span>
                 </li>
                 <li>
                 <a href="../php/edicoes/edicoes.php">
-                    <i class='bx bx-edit-alt'></i>
+                    <i class='bx bx-edit-alt' id="btn1"></i>
                     <span class="links_name">Edições</span>
                 </a>
                 <span class="tooltip">Edições</span>
@@ -96,7 +96,7 @@
             echo <<<EOT
             <li>
                 <a href="../php/sair.php">
-                    <i class='bx bx-exit'></i>
+                    <i class='bx bx-exit' id="btn1"></i>
                     <span class="links_name">Sair</span>
                 </a>
                 <span class="tooltip">Sair</span>

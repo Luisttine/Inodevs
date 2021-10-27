@@ -105,7 +105,12 @@ body {
 }
 
 #btn {
-    padding-right: 4.9vw;
+    padding-right: 4vw;
+    cursor: pointer;
+}
+
+#btn1 {
+    padding-right: 1vw;
     cursor: pointer;
 }
 
