@@ -89,6 +89,7 @@ td {
 }
 
 
+
 @media screen and (max-width: 480px) {
     * {
       height: 13vh;
@@ -168,17 +169,25 @@ td {
     }
 
     .navabas label{
-        width: 107px;
-        padding: 10px;
-        background-color: rgba(0, 35, 57, 0.521);;
-        display: block;
-        color: white;
-        cursor: pointer;
-        border-left: 1px solid black;
+        width: 90px;
+        height: 30px;
+        margin: 0;
+        font-size: smaller;
+        padding: 5px;
+        display: inline-block;
     }
 
     tr{
         font-size: .2em;
     }
 
+    .lados {
+        height: 500vh;
+        width: 500vh;
+        overflow-y: scroll;
+        overflow-x: scroll;
+    }
+    td {
+      font-size: 4em;
+    }
 }

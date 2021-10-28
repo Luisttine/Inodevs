@@ -12,6 +12,8 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Quadro de Presenças</title>
             <link rel="stylesheet" href="../../css/quadro.css">
+            <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+            <link rel="stylesheet" href="../../css/sidebar.css">
         </head>
         <body>
             <!-- jQuery -->
@@ -213,10 +215,62 @@
             echo <<<EOT
             </table>
             <br><br>
-            <div class="left">
             </div>
             </div>
-            <script>
+                <div class="sidebar">
+                    <div class="logo_content">
+                        <i class='bx bx1-c-plus-plus'></i>
+                        <i class='bx bx-menu' id="btn"></i>
+                    </div>
+                    <ul class="nav_list">
+                        <li>
+                        <a href="../../php/presenca.php">
+                        <i class='bx bx-check-square' id="btn1"></i>
+                            <span class="links_name">Presenças</span>
+                        </a>
+                        <span class="tooltip">Presenças</span>
+                        </li>
+                        <li>
+                        <a href="../../php/controle.php">
+                        <i class='bx bx-user' id="btn1"></i>
+                            <span class="links_name">Perfis</span>
+                        </a>
+                        <span class="tooltip">Perfis</span>
+                        </li>
+                        <li>
+                            <a href="../../php/quadropresenca/quadropresenca.php">
+                                <i class='bx bx-clipboard' id="btn1"></i>
+                                <span class="links_name">Relatório</span>
+                            </a>
+                            <span class="tooltip">Relatório</span>
+                        </li>
+                        <li>
+                            <a href="../../php/edicoes/edicoes.php">
+                                <i class='bx bx-edit-alt' id="btn1"></i>
+                                <span class="links_name">Edições</span>
+                            </a>
+                            <span class="tooltip">Edições</span>
+                        </li> 
+                        <li>
+                            <a href="../../sair.php">
+                                <i class='bx bx-exit' id="btn1"></i>
+                                <span class="links_name">Sair</span>
+                            </a>
+                            <span class="tooltip">Sair</span>
+                        </li>
+                    </ul>
+                </div>
+                <script>
+                    let btn = document.querySelector("#btn");
+                    let sidebar = document.querySelector(".sidebar");
+                    btn.onclick = function() {
+                        sidebar.classList.toggle("active");
+                    }
+                    $("div#perfil").click(function(){
+                    $("div#info").slideToggle();
+                    });
+                </script>
+                <script>
             EOT;
                 // Script/PHP para a mecânica de aparecer ao clicar (Aqui é usado os id/class diferentes criados para cada posto de trabalho e seus colaboradores)
                 $n4 = 1;

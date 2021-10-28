@@ -32,8 +32,9 @@
     ?>
 </head>
 <body>
-    <h1>Edições</h1>
-    <nav class="navabas">
+    <div class="lados">
+        <h1>Edições</h1>
+        <nav class="navabas">
             <ul>
                 <li>
                     <input type="radio" name="aba" class="radio_aba" id="aba1" checked>
@@ -257,6 +258,8 @@
                 </li>
             </ul>
         </nav>
+    </div>
+
         <div class="sidebar">
                     <div class="logo_content">
                         <i class='bx bx1-c-plus-plus'></i>
