@@ -1,3 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: Space, Helvetica, sans-serif, Mono, Arial;
+    border: none;
+    font-size: 16px;
+}
+
 
 .principal {
     width: 90%;
@@ -6,6 +15,7 @@
     padding-top: 5px;
     margin-top: 20px;
     margin-left: 7vw;
+    height: auto;
 }
 
 .principalforms {
@@ -21,6 +31,7 @@ h1 {
     text-align: center;
     font-weight: bold;
     font-size: 50px;
+    margin-bottom: 35px;
 }
 
 table {
@@ -29,6 +40,7 @@ table {
     border-collapse: collapse;
     border-radius: 10px;
     margin-top: 1%;
+    height: 80%;
 }
 
 td {
@@ -43,7 +55,7 @@ td {
     color: black;
     font-size: 18px;
     border-radius: 10px;
-    margin-left: 330px;
+    margin-right: 20px;
     border: 1px black solid
 }
 
@@ -328,9 +340,8 @@ table {
     width: 30%;
     margin-top: -2%;
     text-align: center;
-    margin-left: 3vw;
+    margin-left: 1vw;
 }
-
 
 #pesquisar {
     width: 188px;
@@ -349,7 +360,6 @@ table {
     float: right;
     margin-right: 120px;
 }
-
 
 .posto {
     font-weight: bold;

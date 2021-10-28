@@ -4,7 +4,7 @@
     box-sizing: border-box; 
     font-family: Space, Helvetica, sans-serif, Mono, Arial;
     border: none;
-    font-size: 20px;
+    font-size: 16px;
   }
   
 .fundo{
@@ -43,7 +43,7 @@
 }
 
 .relogio{
-    margin-top: 1%;
+    margin-top: 5%;
     font-size: 2em;
     text-align: center;
 }
@@ -139,7 +139,7 @@
     width: 98%;
     float: center;
     text-align: right;
-  }
+}
 
 @media screen and (max-width: 480px) {
 

@@ -1,6 +1,9 @@
 <?php
     session_start();
     include_once("../conexao.php");
+    $sql_code_clientes = "SELECT * FROM clientes";
+    $sql_query_clientes = $conn->query($sql_code_clientes) or die($mysqli->error);
+    $linha_clientes = $sql_query_clientes->fetch_assoc();
     $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
     $result = "SELECT * FROM contratos where numero='$id'";
     $resultado= mysqli_query($conn, $result);
@@ -35,8 +38,21 @@
                 echo <<<EOT
                 <form method="POST" action="bdeditarcontrato.php">
                 <input type="hidden" name="numero" value="$linha_numero" required>
-                <label>Cliente: </label><br>
-                <input type="text" name="cliente" value="$linha_cliente" required><br><br>
+                <label>Cliente: </label>
+                <select name="cliente" required> 
+                EOT;
+                ?>
+                <?php
+                    do{
+                            $linha_clientes_clientes = $linha_clientes['nome_fantasia'];  
+                            if($linha_clientes_clientes == $linha_cliente){
+                                echo "<option selected>$linha_clientes_clientes</option>";
+                            } else{  
+                                echo "<option>$linha_clientes_clientes</option>";
+                            } 
+                    }while($linha_clientes=$sql_query_clientes->fetch_assoc());   
+                echo <<<EOT
+                </select><br><br>
                 <label>Valor:</label><br>
                 <input type="text" name="valor" value="$linha_valor" required><br><br>
                 <label>Posto de trabalho associados ao contrato e suas respectivas vagas :</label><br>

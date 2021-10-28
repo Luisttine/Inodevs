@@ -1,6 +1,9 @@
 <?php
     session_start();
     include_once("../conexao.php");
+    $sql_code_posto = "SELECT * FROM presenca_posto";
+    $sql_query_posto = $conn->query($sql_code_posto) or die($mysqli->error);
+    $linha_posto = $sql_query_posto->fetch_assoc();
     $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
     $result_colaborador = "SELECT * FROM presenca where id='$id'";
     $resultado_colaborador = mysqli_query($conn, $result_colaborador);
@@ -34,8 +37,19 @@
                     <input type="hidden" name="id" value=" $linha_colaborador_id" required>
                 <label>Colaborador: </label><br>
                 <input type="text" name="colaborador" placeholder="Edite o nome do colaborador" value="$linha_colaborador_colaborador" required><br><br>
-                <label>Posto de Trabalho:</label><br>
-                <input type="text" name="posto_de_trabalho" placeholder="Edite o posto de trabalho deste colaborador" value="$linha_colaborador_posto" required><br><br>
+                <label>Posto de Trabalho:</label>
+                <select name="posto_de_trabalho" required> 
+                EOT;
+                    do {
+                        $linha_posto_posto = $linha_posto['posto_de_trabalho'];
+                        if($linha_posto_posto == $linha_colaborador_posto){
+                            echo "<option selected> $linha_posto_posto</option>";
+                        } else{
+                            echo "<option> $linha_posto_posto</option>";
+                        }
+                    } while($linha_posto=$sql_query_posto->fetch_assoc());
+                echo <<<EOT
+                </select><br><br>
                 <label>Presenças: </label>
                 <table>
                 <tr>

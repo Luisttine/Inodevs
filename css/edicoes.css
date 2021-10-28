@@ -27,7 +27,7 @@ h1 {
 
 .navabas label{
     width: 190px;
-    padding: 25px;
+    padding: 20px;
     background-color: rgba(0, 35, 57, 0.521);;
     display: block;
     color: white;
@@ -88,6 +88,19 @@ td {
     color: blue;
 }
 
+
+.op{
+  margin-right: 1vw;
+  height: 3vh;
+  width: 98%;
+  float: center;
+  text-align: right;
+}
+
+#perfil:hover{
+  color:#ff0000;
+  cursor: pointer;
+}
 
 
 @media screen and (max-width: 480px) {
@@ -190,4 +203,36 @@ td {
     td {
       font-size: 4em;
     }
+}
+
+#pesquisar {
+  width: 188px;
+  margin-right: 0;
+  float: right;
+  margin-bottom: 0;
+  font-size: 13px;
+  background-color: transparent;
+  color: #000;
+}
+
+#pesquisar {
+  width: 500px;
+  margin-right: 10%;
+  float: right;
+  margin-top: 0%;
+}
+
+input {
+  font-size: 15px;
+  margin-left: 40px;
+  width: 960px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin-top: 15px;
+}
+
+input:focus {
+  border-color: lightseagreen;
+  outline: 0;
 }
