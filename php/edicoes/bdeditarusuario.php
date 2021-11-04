@@ -13,7 +13,7 @@
     if(mysqli_affected_rows($conn)){
         echo "
         <script>
-            alert('Usuário editado com sucesso!');
+            alert('Alocação editado com sucesso!');
             location.href='edicoes.php';
         </script>
         ";

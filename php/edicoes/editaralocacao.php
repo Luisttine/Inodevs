@@ -5,9 +5,6 @@
     $result = "SELECT * FROM alocacoes where id='$id'";
     $resultado= mysqli_query($conn, $result);
     $linha = mysqli_fetch_assoc($resultado);
-    $sql_code_colab = "SELECT * FROM colaboradores";
-    $sql_query_colab = $conn->query($sql_code_colab) or die($mysqli->error);
-    $linha_colab = $sql_query_colab->fetch_assoc();
     $nivel_acesso = $_SESSION['nivel_acesso'];
     if(!empty($_SESSION['ulogin'])){
     if($nivel_acesso == 2){
@@ -37,19 +34,8 @@
                 echo <<<EOT
                 <form method="POST" action="bdeditaralocacao.php">
                     <input type="hidden" name="id" value="$linha_id" required>
-                <label>Nome: </label>
-                <select name='nome'>
-                EOT;
-                do {
-                    $linha_colab_nome = $linha_colab['nome_completo'];
-                    if ($linha_colab_nome == $linha_nome){
-                        echo "<option selected> $linha_colab_nome</option>";
-                    } else{
-                        echo "<option> $linha_colab_nome</option>";
-                    }
-                } while($linha_colab=$sql_query_colab->fetch_assoc());
-                echo <<<EOT
-                </select><br><br>
+                <label>Nome: </label><br>
+                <input type="text" name="nome" value="$linha_nome" required><br><br>
                 <label>Associação:</label><br>
                 <input type="text" name="associacao" value="$linha_associacao" required><br><br>
                 <label>Tipo de Cobertura:</label>

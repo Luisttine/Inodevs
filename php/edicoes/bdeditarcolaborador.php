@@ -10,8 +10,9 @@
     $situacao_cadastro = $_POST['situacao_cadastro'];
     $tipo_cobertura = $_POST['tipo_cobertura'];
     $posto = $_POST['posto_trabalho'];
+    $flutuante = $_POST['flutuante'];
 
-    $result_colaborador = "UPDATE colaboradores SET cpf='$cpf', nome_completo='$nome_completo', data_admissao='$data_admissao', data_demissao='$data_demissao', situacao_cadastro='$situacao_cadastro', tipo_cobertura='$tipo_cobertura', posto_trabalho='$posto' WHERE matricula='$id'";
+    $result_colaborador = "UPDATE colaboradores SET cpf='$cpf', nome_completo='$nome_completo', data_admissao='$data_admissao', data_demissao='$data_demissao', situacao_cadastro='$situacao_cadastro', tipo_cobertura='$tipo_cobertura', posto_trabalho='$posto', flutuante='$flutuante' WHERE matricula='$id'";
     $resultado_colaborador = mysqli_query($conn, $result_colaborador);
 
     if(mysqli_affected_rows($conn)){

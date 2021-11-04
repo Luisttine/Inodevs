@@ -1,9 +1,6 @@
 <?php
     session_start();
     include_once("../conexao.php");
-    $sql_code_colaborador = "SELECT * FROM colaboradores";
-    $sql_query_colaborador = $conn->query($sql_code_colaborador) or die($mysqli->error);
-    $linha_colaborador = $sql_query_colaborador->fetch_assoc();
     $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
     $result = "SELECT * FROM usuarios where ulogin='$id'";
     $resultado= mysqli_query($conn, $result);
@@ -37,41 +34,12 @@
                 echo <<<EOT
                 <form method="POST" action="bdeditarusuario.php">
                     <input type="hidden" name="ulogin" value="$linha_ulogin" required>
-                <label>Nome: </label>
-                <select name="nome" required> 
-                EOT;
-                ?>
-                <?php
-                    do{
-                            $linha_colaborador_colaborador = $linha_colaborador['nome_completo'];  
-                            if($linha_colaborador_colaborador == $linha_nome){
-                                echo "<option selected>$linha_colaborador_colaborador</option>";
-                            } else{  
-                                echo "<option>$linha_colaborador_colaborador</option>";
-                            } 
-                    }while($linha_colaborador=$sql_query_colaborador->fetch_assoc());   
-                echo <<<EOT
-                </select><br><br>
-                <label>Email:</label><br>
+                <label>Nome: </label><br>
+                <input type="text" name="nome" value="$linha_nome" required><br><br>
+                <label>email:</label><br>
                 <input type="text" name="email" value="$linha_email" required><br><br>
                 <label>Nível Acesso:</label><br>
-                <label>Tipo de Cobertura:</label>
-                EOT;
-                if ($linha_nivel_acesso == 'Operacional'){
-                    echo "
-                    <select name='nivel_acesso' required>
-                        <option value='1' selected>Operacional</option>
-                        <option value='2'>Tático</option>
-                    </select>";
-                } else {
-                    echo "
-                    <select name='nivel_acesso' required>
-                        <option value='1'>Operacional</option>
-                        <option value='2' selected>Tático</option>
-                    </select>";
-                }
-                echo <<<EOT
-                <br>
+                <input type="text" name="nivel_acesso" value="$linha_nivel_acesso" required><br><br>
                 <input type="submit" value="Editar">
                 </form>
                 <br><br>

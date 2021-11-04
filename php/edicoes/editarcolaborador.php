@@ -6,6 +6,9 @@
     $result = "SELECT * FROM colaboradores where matricula='$id'";
     $resultado= mysqli_query($conn, $result);
     $linha = mysqli_fetch_assoc($resultado);
+    $sql_code_flutuante = "SELECT * FROM flutuante";
+    $sql_query_flutuante = $conn->query($sql_code_flutuante) or die($mysqli->error);
+    $linha_flutuante = $sql_query_flutuante->fetch_assoc();
     $sql_code_posto = "SELECT * FROM presenca_posto";
     $sql_query_posto = $conn->query($sql_code_posto) or die($mysqli->error);
     $linha_posto = $sql_query_posto->fetch_assoc();
@@ -39,6 +42,7 @@
                     $linha_situacao_cadastro = $linha['situacao_cadastro'];
                     $linha_tipo_cobertura = $linha['tipo_cobertura'];
                     $linha_posto_trabalho = $linha['posto_trabalho'];
+                    $linha_flutuante_subs = $linha['flutuante'];
                 echo <<<EOT
                 <form method="POST" action="bdeditarcolaborador.php">
                 <input type="hidden" name="id" value="$linha_id" required><br><br>
@@ -92,7 +96,7 @@
                     </select>";
                 }
                 echo <<<EOT
-                <br>
+                <br><br>
                 <label>Posto de Trabalho:</label>
                 <select name='posto_trabalho'>
                 EOT;
@@ -105,7 +109,21 @@
                     }
                 } while($linha_posto=$sql_query_posto->fetch_assoc());
                 echo <<<EOT
-                </selected>
+                </select>
+                <br>
+                <label>Flutuante:</label>
+                <select name='flutuante'>
+                EOT;
+                do {
+                    $linha_flutuante_flutuante = $linha_flutuante['nome_completo'];
+                    if ($linha_flutuante_flutuante == $linha_flutuante_subs){
+                        echo "<option selected> $linha_flutuante_flutuante</option>";
+                    } else{
+                        echo "<option> $linha_flutuante_flutuante</option>";
+                    }
+                } while($linha_flutuante=$sql_query_flutuante->fetch_assoc());
+                echo <<<EOT
+                </select>
                     <input type="submit" value="Editar">
                 </form>
                 <br><br>
