@@ -4,6 +4,9 @@
     $sql_code_posto = "SELECT * FROM presenca_posto";
     $sql_query_posto = $conn->query($sql_code_posto) or die($mysqli->error);
     $linha_posto = $sql_query_posto->fetch_assoc();
+    $sql_code_flutuante = "SELECT * FROM flutuante";
+    $sql_query_flutuante = $conn->query($sql_code_flutuante) or die($mysqli->error);
+    $linha_flutuante = $sql_query_flutuante->fetch_assoc();
     $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
     $result_colaborador = "SELECT * FROM presenca where id='$id'";
     $resultado_colaborador = mysqli_query($conn, $result_colaborador);
@@ -32,6 +35,7 @@
                     $linha_colaborador_id = $linha_colaborador['id'];
                     $linha_colaborador_colaborador = $linha_colaborador['colaborador'];
                     $linha_colaborador_posto = $linha_colaborador['posto_de_trabalho'];
+                    $linha_colaborador_flutuante = $linha_flutuante['nome_completo'];
                 echo <<<EOT
                 <form method="POST" action="peditarcolaborador.php">
                     <input type="hidden" name="id" value=" $linha_colaborador_id" required>
@@ -50,6 +54,8 @@
                     } while($linha_posto=$sql_query_posto->fetch_assoc());
                 echo <<<EOT
                 </select><br><br>
+                <label>Flutuante Substituto: </label><br>
+                <input type="text" name="flutuante" value="$linha_colaborador_flutuante" required><br><br>
                 <label>Presenças: </label>
                 <table>
                 <tr>

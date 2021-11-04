@@ -30,6 +30,66 @@
             // Início do contador para mecânica de clicar e aparecer
             $posto = 1;
             $colaborador = 1;
+            $presencaposto = array();
+            do{
+                $n2 = 1;
+                $dnumero2 = 'd' . $n2;
+                while ($n2<=31){
+                    $sql_query_colaborador = $conn->query($sql_code_colaborador) or die($mysqli->error);
+                    $linha_colaborador = $sql_query_colaborador->fetch_assoc();
+                    $presenca = 0;
+                    do{
+                        if ($linha_posto['posto_de_trabalho'] == $linha_colaborador['posto_de_trabalho']){
+                            if($linha_colaborador[$dnumero2] == 'P'){
+                                $presenca++;
+                            }
+                        }
+                    }while($linha_colaborador = $sql_query_colaborador->fetch_assoc());
+                    if($presenca == $linha_posto['numero_colab']){
+                        $n2++;
+                        $dnumero2 = 'd' . $n2;
+                        $presencaposto[] = 'P';
+                    } 
+                    elseif($presenca < $linha_posto['numero_colab']){
+                        $n2++;
+                        $dnumero2 = 'd' . $n2;
+                        $presencaposto[] = 'F';
+                        
+                    }
+                    elseif ($linha_posto[$dnumero2] == 'P'){
+                        $n2++;
+                        $dnumero2 = 'd' . $n2;
+                        $presencaposto[] = 'P';
+                    } elseif ($linha_posto[$dnumero2] == 'E'){
+                        echo "<td class='blue'>E</td>";
+                        $n2++;
+                        $dnumero2 = 'd' . $n2;
+                        $presencaposto[] = 'E';
+                    } else {
+                        $n2++;
+                        $dnumero2 = 'd' . $n2;
+                        $presencaposto[] = 'F';
+                    }
+                }
+            }while($linha_posto=$sql_query_posto->fetch_assoc());
+        
+            $sql_query_posto = $conn->query($sql_code_posto) or die($mysqli->error);
+            $linha_posto = $sql_query_posto->fetch_assoc();
+            $vetor = 0;
+            do {
+                $id_posto = $linha_posto['id'];
+                $dia = 1;
+                while($dia <= 31){
+                    $presencapvet = $presencaposto[$vetor];
+                    $result = "UPDATE presenca_posto SET d$dia = '$presencapvet' WHERE id='$id_posto'";
+                    $resultado = mysqli_query($conn, $result);
+                    $dia++;
+                    $vetor++;
+                }
+            }  while($linha_posto=$sql_query_posto->fetch_assoc());
+        
+            $sql_query_posto = $conn->query($sql_code_posto) or die($mysqli->error);
+            $linha_posto = $sql_query_posto->fetch_assoc();
         // Mensagem de sucesso ou falha de alguma ação (editar/deletar)
         if(isset($_SESSION['msg'])){
             echo $_SESSION['msg'];
@@ -100,37 +160,27 @@
                         while ($n2<=date('d')){
                             $sql_query_colaborador = $conn->query($sql_code_colaborador) or die($mysqli->error);
                             $linha_colaborador = $sql_query_colaborador->fetch_assoc();
-                            $presenca = 0;
-                            do{
-                                if ($linha_posto['posto_de_trabalho'] == $linha_colaborador['posto_de_trabalho']){
-                                    if($linha_colaborador[$dnumero2] == 'P'){
-                                        $presenca++;
-                                    }
-                                }
-                            }while($linha_colaborador = $sql_query_colaborador->fetch_assoc());
-                            if($presenca >= $linha_posto['numero_colab']){
+                            if ($linha_posto[$dnumero2] == 'P'){
                                 echo "<td class='green'>P</td>";
                                 $n2++;
                                 $dnumero2 = 'd' . $n2;
-                            }   
-                            elseif ($linha_posto[$dnumero2] == 'P'){
-                                echo "<td class='green'>P</td>";
-                                echo $linha_posto['numero_colab'];
-                                $n2++;
-                                $dnumero2 = 'd' . $n2;
+                                $presencaposto[] = 'P';
                             } elseif ($linha_posto[$dnumero2] == 'E'){
                                 echo "<td class='blue'>E</td>";
                                 $n2++;
                                 $dnumero2 = 'd' . $n2;
+                                $presencaposto[] = 'E';
                             } elseif ($n2 < date('d')) {
                                 echo "<td class='red'>F</td>";
                                 $n2++;
                                 $dnumero2 = 'd' . $n2;
+                                $presencaposto[] = 'F';
                             // Caso for o dia atual, ainda não é adicionado a falta automaticamente
                             } else {
                                 echo "<td></td>";
                                 $n2++;
                                 $dnumero2 = 'd' . $n2;
+                                $presencaposto[] = 'F';
                             }
                         }
                         // Depois do dia atual será adicionado campos vazios
@@ -214,63 +264,61 @@
             } while($linha_posto=$sql_query_posto->fetch_assoc());
             echo <<<EOT
             </table>
+            <a href="relatoriogerencial.php" class="relatorio1">Relatório Gerencial</a><br>
+            <a href="relatorioquadro.php" class="relatorio2">Relatório do Quadro</a>
             <br><br>
             </div>
+            <div class="sidebar">
+                        <div class="logo_content">
+                            <i class='bx bx1-c-plus-plus'></i>
+                            <i class='bx bx-menu' id="btn"></i>
+                        </div>
+                        <ul class="nav_list">
+                            <li>
+                            <a href="../presenca.php">
+                            <i class='bx bx-check-square' id="btn1"></i>
+                                <span class="links_name">Presenças</span>
+                            </a>
+                            <span class="tooltip">Presenças</span>
+                            </li>
+                            <li>
+                            <a href="../controle.php">
+                            <i class='bx bx-user' id="btn1"></i>
+                                <span class="links_name">Perfis</span>
+                            </a>
+                            <span class="tooltip">Perfis</span>
+                            </li>
+                            <li>
+                                <a href="../quadropresenca/quadropresenca.php">
+                                    <i class='bx bx-clipboard' id="btn1"></i>
+                                    <span class="links_name">Relatório</span>
+                                </a>
+                                <span class="tooltip">Relatório</span>
+                            </li>
+                            <li>
+                                <a href="../edicoes/edicoes.php">
+                                    <i class='bx bx-edit-alt' id="btn1"></i>
+                                    <span class="links_name">Edições</span>
+                                </a>
+                                <span class="tooltip">Edições</span>
+                            </li> 
+                            <li>
+                                <a href="../../html/paginodevs.html">
+                                    <i class='bx bx-code-alt' id="btn1"></i>
+                                    <span class="links_name">Inodevs</span>
+                                </a>
+                                <span class="tooltip">Inodevs</span>
+                            </li>
+                            <li>
+                                <a href="../sair.php">
+                                    <i class='bx bx-exit' id="btn1"></i>
+                                    <span class="links_name">Sair</span>
+                                </a>
+                                <span class="tooltip">Sair</span>
+                            </li>
+                        </ul>
             </div>
-                <div class="sidebar">
-                    <div class="logo_content">
-                        <i class='bx bx1-c-plus-plus'></i>
-                        <i class='bx bx-menu' id="btn"></i>
-                    </div>
-                    <ul class="nav_list">
-                        <li>
-                        <a href="../../php/presenca.php">
-                        <i class='bx bx-check-square' id="btn1"></i>
-                            <span class="links_name">Presenças</span>
-                        </a>
-                        <span class="tooltip">Presenças</span>
-                        </li>
-                        <li>
-                        <a href="../../php/controle.php">
-                        <i class='bx bx-user' id="btn1"></i>
-                            <span class="links_name">Perfis</span>
-                        </a>
-                        <span class="tooltip">Perfis</span>
-                        </li>
-                        <li>
-                            <a href="../../php/quadropresenca/quadropresenca.php">
-                                <i class='bx bx-clipboard' id="btn1"></i>
-                                <span class="links_name">Relatório</span>
-                            </a>
-                            <span class="tooltip">Relatório</span>
-                        </li>
-                        <li>
-                            <a href="../../php/edicoes/edicoes.php">
-                                <i class='bx bx-edit-alt' id="btn1"></i>
-                                <span class="links_name">Edições</span>
-                            </a>
-                            <span class="tooltip">Edições</span>
-                        </li> 
-                        <li>
-                            <a href="../../sair.php">
-                                <i class='bx bx-exit' id="btn1"></i>
-                                <span class="links_name">Sair</span>
-                            </a>
-                            <span class="tooltip">Sair</span>
-                        </li>
-                    </ul>
-                </div>
-                <script>
-                    let btn = document.querySelector("#btn");
-                    let sidebar = document.querySelector(".sidebar");
-                    btn.onclick = function() {
-                        sidebar.classList.toggle("active");
-                    }
-                    $("div#perfil").click(function(){
-                    $("div#info").slideToggle();
-                    });
-                </script>
-                <script>
+            <script>
             EOT;
                 // Script/PHP para a mecânica de aparecer ao clicar (Aqui é usado os id/class diferentes criados para cada posto de trabalho e seus colaboradores)
                 $n4 = 1;
