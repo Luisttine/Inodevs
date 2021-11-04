@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    font-family: Space, Helvetica, sans-serif, Mono, Arial;
+}
+
+h1 {
+    padding-top: 5vh;
+    font-size: 3em;
+    text-align: center;
+}
+
+h2 {
+    padding-top: 2vh;
+    font-size: 2.5em;
+    text-align: center; 
+}
+
+h3 {
+    padding-top: 2vh;
+    font-size: 2.5em;
+    text-align: center; 
+}
+
+h4 {
+    padding-top: 2vh;
+    font-size: 2.5em;
+    text-align: center; 
+}
+
+#graficos {
+    display: inline-block;
+    width: 90%;
+    height: 36vh;
+    margin-left: 5%;
+    margin-top: 5vh;
+    margin-bottom: 8vh;
+}
+
+.geral{
+    width: 100%;
+}
+
+#left{
+    margin-top: 0vh;
+    width: 50%;
+    height: 100%;
+    float: left;
+    align-items: center;
+    text-align: center;
+    padding-top: 1.5vh;
+}
+  
+#right{
+    margin-top: 0vh;
+    width: 50%;
+    float: right;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+p{
+    font-size: 2em;
+}
+
+h5 {
+    font-size: 2em;
+    margin-top: 3.5vh;
+    margin-bottom: 1vh;
+}
+
+h6 {
+    font-size: 2em;
+    margin-top: 3.5vh;
+    margin-bottom: 1vh;
+}
+
+#local1{
+    float: left;
+    width: 30%;
+    text-align: center;
+    height: 21vh;
+}
+
+#local2{
+    float: right;
+    width: 70%;
+    height: 21vh;
+}
+
+#blocoa{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+#blocob{
+    float: right;
+    width: 41%;
+    margin-right: 9%;
+    text-align: center;
+}
+
+#local3{
+    float: left;
+    width: 30%;
+    align-items: center;
+    height: 21vh;
+    display: relative;
+}
+
+#local4{
+    float: right;
+    width: 70%;
+    align-items: center;
+    height: 21vh;
+    display: relative;
+}
+
+#blococ{
+    float: left;
+    width: 50%;
+    margin-left: 5%;
+}
+
+#blocod{
+    float: right;
+    width: 45%;
+}
+
+.relatorio1{
+    background-color: #E5C03B;;
+    padding: 8px 5px;
+    font-size: 20px;  
+    margin-bottom: 10px;  
+    border-radius: 20px;
+    cursor: pointer;
+    flex: 1 1 50%;
+    position: relative;
+    width: 20%;
+    margin-top: 2%;
+    text-align: center;
+    float: right;
+    margin-right: 5%;
+}
+
+.relatorio1:hover{
+    background: goldenrod;
+}
+
+#create_pdf{
+    background-color: #E5C03B;;
+    padding: 8px 5px;
+    font-size: 20px;  
+    margin-bottom: 5%;  
+    border-radius: 20px;
+    cursor: pointer;
+    flex: 1 1 50%;
+    position: relative;
+    width: 20%;
+    margin-top: 75%;
+    align-items: center;
+    float: right;
+    margin-right: -8%;
+    border: 0 solid;
+}
+
+#create_pdf:hover{
+    background: goldenrod;
+}
+
+#btn-submit1 {
+    background-color: #3d7292;
+    color:#FFF;
+    padding: 8px 5px;
+    font-size: 20px;  
+    margin-bottom: 10px;  
+    border-radius: 20px;
+    cursor: pointer;
+    flex: 1 1 50%;
+    position: absolute;
+    width: 20%;
+    margin-top: 2%;
+    text-align: center;
+    float: right;
+    margin-right: 2%;
+    text-decoration: none;
+    right: 0;
+    top: 0;
+}
+
+#btn-submit1:hover {
+    background-color: #2c5874;
+}
+

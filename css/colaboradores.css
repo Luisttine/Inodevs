@@ -179,7 +179,7 @@ a.links{
 
 @media screen and (max-width: 480px) {     
     .left{
-        height: 150vh;
+        height: 160vh;
         width: 43px;
     }
         
@@ -196,7 +196,7 @@ a.links{
             
     .middle-box {
         width: 62%;
-        margin-top: 125.5%;
+        margin-top: 158.5%;
     }   
         
     .full-box {
@@ -205,9 +205,9 @@ a.links{
     }
 
     input {
-    border-bottom: 2px solid #323232;
-    font-size: .7rem;
-    padding: 5px;
+        border-bottom: 2px solid #323232;
+        font-size: .7rem;
+        padding: 5px;
     }        
     input[type="submit"] {
         font-size: 1em;  

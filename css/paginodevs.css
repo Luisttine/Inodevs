@@ -1,0 +1,157 @@
+/*imagem de fundo*/
+body {
+    background-image: url(../img/fundo.jpg);
+    background-repeat: no-repeat ;
+    background-size: 100%;
+    background-attachment: fixed;
+    color: #333;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+/*fundo branco no texto*/
+.site{
+    width: 70%;
+    background-color: white;
+    margin: 0 auto;
+    height: auto;
+}
+
+.perfis{
+    width: 80px;
+    height: 80px;
+
+}
+/*.php{
+    width: 120px;
+    height: 80px;
+}
+/*.php{
+    width: 230px;
+    height: 120px;
+}*/
+.imagem{
+    width: 300px;
+    height: 300px;  
+}
+
+body, input, select, textarea {
+    font-family: "Segoe UI";
+    text-align: center;
+}
+
+a{
+    border-radius: 6px; 
+    padding:5px;
+    text-decoration: none;
+    text-align:center;	
+    color:#ccc;
+    background: rgb(95, 93, 98);	
+    width:120px;  
+    height:24px;
+}
+
+a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 1.5em;
+    line-height: 1.4em;
+    font-family: Marker Felt, fantasy;
+}
+
+#conteudo-principal h1 {
+    font-size: 36px;
+    margin-bottom: 0.5em;
+   font-family: Marker Felt, fantasy;
+}
+
+#conteudo-principal h2,
+#conteudo-secundario h1 {
+    font-size: 24px;
+    margin-bottom: 0.5em;
+    font-family: Marker Felt, fantasy;
+}
+
+#conteudo-secundario p {
+    font-size: 14px;
+}
+
+#rodape h1{
+    font-size: 24px;
+    margin-bottom: 0.5em;
+    font-family: Marker Felt, fantasy;
+}
+
+#rodape {
+    padding-bottom: 25px;
+}
+
+.menu-principal{
+    margin: 0 auto;
+    padding-top: 25px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.php{
+    width: 200px;
+    height: 100px; 
+}
+
+#voltar {
+    color: black;
+}
+
+@media screen and (max-width: 480px) {     
+    #rodape h1{
+        font-size: 12px;
+    }
+
+    #conteudo-secundario p {
+        font-size: 6.5px;
+    }
+
+    #conteudo-principal h2,
+    #conteudo-secundario h1 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+    
+    #conteudo-principal h1 {
+        font-size: 20px;
+    }
+
+    .imagem{
+        width: 175px;
+        height: 150px;  
+    }
+
+    #copyright{
+        font-size: 10px;
+    }
+
+    .site{
+        width: 80%;
+    }
+
+    .perfis{
+        width: 60px;
+        height: 60px;
+    }
+
+    body {
+        margin-bottom: 50px;
+        margin-top: 25px;
+        background-size: 160%;
+    }
+
+}
