@@ -4,6 +4,9 @@
     $sql_code_posto = "SELECT * FROM presenca_posto";
     $sql_query_posto = $conn->query($sql_code_posto) or die($mysqli->error);
     $linha_posto = $sql_query_posto->fetch_assoc();
+    $sql_code_flutuante = "SELECT * FROM flutuante";
+    $sql_query_flutuante = $conn->query($sql_code_flutuante) or die($mysqli->error);
+    $linha_flutuante = $sql_query_flutuante->fetch_assoc();
     $nivel_acesso = $_SESSION['nivel_acesso'];
     if(!empty($_SESSION['ulogin'])){
     if($nivel_acesso == 2){
@@ -82,15 +85,30 @@
                             echo "<option> $linha_posto_posto</option>";
                         } while($linha_posto=$sql_query_posto->fetch_assoc());
         echo <<<EOT
-                    </select>
-                    <br><br>
+                                </select>
+                                <br><br>
+                            </div>
+                        </div>
+                    <div class="half-box">
+                        <label for="flutuante">Flutuante Substituto</label>
+                        <div class="table_cell table_title two">
+                            <select name="flutuante" required> 
+                                <option value="" disabled selected hidden>Selecione um flutuante...</option>
+        EOT;
+                    do {
+                        $linha_flutuante_flutuante = $linha_flutuante['nome_completo'];
+                        echo "<option> $linha_flutuante_flutuante</option>";
+                    } while($linha_flutuante=$sql_query_flutuante->fetch_assoc());
+        echo <<<EOT
+                            </select>
+                        <br><br>
+                        </div>
+                    </div>
+                <div class="middle-box">
+                    <input type="submit" value="Cadastrar">
                 </div>
-            </div>
-            <div class="middle-box">
-                <input type="submit" value="Cadastrar">
-            </div>
-        </form>
-    </div>
+            </form>
+        </div>
     EOT;
         if(isset($_SESSION['msg'])){
             echo $_SESSION['msg'];

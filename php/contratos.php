@@ -39,7 +39,7 @@
                     </div>
                     <div class="half-box">
                         <label for="name">Cliente</label><br>
-                        <select name="cliente" required> 
+                        <select name="nome" required> 
                                 <option value="" disabled selected hidden>Selecione um cliente...</option>
         EOT;
 ?>
