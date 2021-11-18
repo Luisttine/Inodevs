@@ -1,5 +1,20 @@
 <?php
 
+    session_start();
+    include_once("../conexao.php");
+
+    if (isset($_SESSION['conteudo_gerencial'])){
+        $conteudo_gerencial = $_SESSION['conteudo_gerencial'];
+        $titulo_gerencial = $_SESSION['titulo_gerencial'];
+
+        $result = <<<EOT
+        INSERT INTO relatorios (titulo, tipo_relatorio, conteudo) VALUES ('$titulo_gerencial', 'Gerencial', '$conteudo_gerencial')
+        EOT;
+        $resultado = mysqli_query($conn, $result);
+
+        unset($_SESSION['conteudo_gerencial'], $_SESSION['titulo_gerencial']);
+    }
+
     require_once 'dompdf/autoload.inc.php';
 
     use Dompdf\Dompdf;
@@ -56,4 +71,5 @@
         $pdf->render();
         $pdf->stream($file_name, array("Attachment" => false));
     }
+
 ?>

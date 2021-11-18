@@ -96,7 +96,6 @@
             unset($_SESSION['msg']);
         }
         echo <<<EOT
-        <div class="voltar3"><a href="../controle.php">Retornar</a></div>
         <div class='principal'>
         <h1>Quadro de Presença</h1>
             <!-- Botão de deletar todas presenças com aviso de confirmação javascript-->
@@ -266,6 +265,7 @@
             </table>
             <a href="relatoriogerencial.php" class="relatorio1">Relatório Gerencial</a><br>
             <a href="relatorioquadro.php" class="relatorio2">Relatório do Quadro</a>
+            <a href="relatorios.php" class="relatorio2">Histórico de Relatórios</a>
             <br><br>
             </div>
             <div class="sidebar">
