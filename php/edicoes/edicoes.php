@@ -105,16 +105,16 @@
                             EOT;
                                 do{
                                     $linha_contrato_numero=$linha_contrato['numero'];
-                                    $linha_contrato_cliente=$linha_contrato['cliente'];
+                                    $linha_contrato_nome_fantasi=$linha_contrato['nome_fantasi'];
                                     $linha_contrato_valor=$linha_contrato['valor'];
                                     $linha_contrato_posto_trabalho=$linha_contrato['posto_trabalho'];
                                     $linha_contrato_escala=$linha_contrato['escala'];
                             echo <<<EOT
                                     <tr>
-                                        <td>$linha_contrato_numero/td>
-                                        <td>$linha_contrato_cliente</td>
+                                        <td>$linha_contrato_numero</td>
+                                        <td>$linha_contrato_nome_fantasi</td>
                                         <td>$linha_contrato_valor</td>
-                                        <td>$linha_contrato_posto_trabalh</td>
+                                        <td>$linha_contrato_posto_trabalho</td>
                                         <td>$linha_contrato_escala</td>
                                         <td>
                                             <a href="editarcontrato.php?id=$linha_contrato_numero" class="editar">Editar </a> |
@@ -199,6 +199,7 @@
                                         <td class="titulo">CNPJ</td>
                                         <td class="titulo">Endereço</td>
                                         <td class="titulo">Contato</td>
+                                        <td class="titulo">Id</td>
                                         <td class="titulo">Ação</td>
                                     </tr>
                                 EOT;

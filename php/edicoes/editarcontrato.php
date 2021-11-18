@@ -28,7 +28,7 @@
                         unset($_SESSION['msg']);
                     }
                     $linha_numero = $linha['numero'];
-                    $linha_cliente = $linha['cliente'];
+                    $linha_nome_fantasi = $linha['nome_fantasi'];
                     $linha_valor = $linha['valor'];
                     $linha_posto_trabalho = $linha['posto_trabalho'];
                     $linha_escala = $linha['escala'];
@@ -36,7 +36,7 @@
                 <form method="POST" action="bdeditarcontrato.php">
                 <input type="hidden" name="numero" value="$linha_numero" required>
                 <label>Cliente: </label><br>
-                <input type="text" name="cliente" value="$linha_cliente" required><br><br>
+                <input type="text" name="nome_fantasi" value="$linha_nome_fantasi" required><br><br>
                 <label>Valor:</label><br>
                 <input type="text" name="valor" value="$linha_valor" required><br><br>
                 <label>Posto de trabalho associados ao contrato e suas respectivas vagas :</label><br>

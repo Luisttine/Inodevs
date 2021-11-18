@@ -3,12 +3,12 @@
     include_once("../conexao.php");
 
     $numero = $_POST['numero'];
-    $cliente = $_POST['cliente'];
+    $nome_fantasi = $_POST['nome_fantasi'];
     $valor = $_POST['valor'];
     $posto_trabalho = $_POST['posto_trabalho'];
     $escala = $_POST['escala'];
 
-    $result_contrato = "UPDATE contratos SET cliente='$cliente', valor='$valor', posto_trabalho='$posto_trabalho', escala=$escala WHERE numero='$numero'";
+    $result_contrato = "UPDATE contratos SET nome_fantasi='$nome_fantasi', valor='$valor', posto_trabalho='$posto_trabalho', escala='$escala' WHERE numero='$numero'";
     $resultado_contrato = mysqli_query($conn, $result_contrato);
 
     if(mysqli_affected_rows($conn)){

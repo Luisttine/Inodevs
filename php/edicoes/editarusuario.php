@@ -20,8 +20,9 @@
                     <link rel="stylesheet" href="../../css/quadro.css">
                 </head>
                 <body>
+                    <div class="voltar4"><a href="edicoes.php">Retornar</a></div>
                     <div class=principalforms>
-                    <h1>Editar Usuario</h1>
+                    <h6>Editar Usuario</h6>
                 EOT;
                     if(isset($_SESSION['msg'])){
                         echo $_SESSION['msg'];
@@ -46,7 +47,7 @@
                 <div class="left">
                 </div>
                 </div>
-                    <div class="voltar2"><a href="edicoes.php">Retornar</a></div>
+                    
                 </body>
                 </html> 
                 EOT;
