@@ -44,13 +44,13 @@
                                     <h1>Marque sua presença: </h1>
                                 <form method ="POST" action="bdpresenca.php">
                                     <input id="botao" type="submit" value="Marcar" class="yellow">
-                                </form>
                 EOT;
                                 if(isset($_SESSION['msg'])){
                                     echo $_SESSION['msg'];
                                     unset($_SESSION['msg']);
                                 }
                             echo <<<EOT
+                                </form>
                                 </div>
                             </div>
                     </div>
