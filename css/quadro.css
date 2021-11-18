@@ -7,10 +7,8 @@
     font-size: 16px;
 }
 
-
 .principal {
     width: 90%;
-    background: white;
     margin: auto;
     padding-top: 5px;
     margin-top: 20px;
@@ -20,7 +18,6 @@
 
 .principalforms {
     width: 80%;
-    background: white;
     margin: auto;
     padding-top: 5px;
     margin-top: 20px;
@@ -34,6 +31,13 @@ h1 {
     margin-bottom: 35px;
 }
 
+h6 {
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3em;
+    margin-bottom: 35px;
+}
 table {
     border: solid 1px black;
     margin: auto;
@@ -90,7 +94,7 @@ a{
 }
 
 input {
-    font-size: 15px;
+    font-size: 1em;
     margin-left: 40px;
     width: 960px;
     border-left: none;
@@ -106,18 +110,18 @@ input:focus {
 
 
 input[type="submit"] {
-    background: gold;
+    background-color: #E5C03B;;
     padding: 10px;
-    font-size: 15px;
-    border-radius: 10px;
+    font-size: 1em;
+    border-radius: 50px;
     margin-left: 450px;
-    border: 1px black solid;
+    border: 0px black solid;
     width: 150px;
     cursor: pointer;
 }
 
 input[type="submit"]:hover {
-    background: rgb(231, 197, 0);
+    background: darkgoldenrod;
 }
 
 label{
@@ -174,6 +178,28 @@ label{
     color:#fff;
 }
 
+.voltar4{
+    background-color: #3d7292;
+    padding: 8px 5px;
+    font-size: 20px;  
+    margin-bottom: 10px;  
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 87%;
+    flex: 1 1 50%;
+    position: absolute;
+    width: 10%;
+    text-align: center;
+}
+
+.voltar4:hover{
+    background: #2c5874;
+}
+
+.voltar4, a{
+    color:#fff;
+}
+
 .resetar{
     background-color: #E5C03B;;
     padding: 8px 5px;
@@ -223,7 +249,6 @@ label{
     flex: 1 1 50%;
     position: relative;
     width: 20%;
-    margin-top: 1px;
     text-align: center;
     float: right;
     margin-right: 2%;
@@ -272,7 +297,7 @@ input.quadro {
 .left{
     position: absolute;
     width: 59px;
-    min-height: 110vh;
+    height: 100vh;
     left: 0px;
     top: 0px;
     background: #002339;
@@ -297,11 +322,40 @@ select {
     }
     
     h1 {
-        margin-top: 38px;
         margin-left: 4.5vw;
         font-size: 2.4em;
+        margin-bottom: -2%;
     }
-    
+
+    h6 {
+        margin-top: -2vh;
+        margin-left: -10vw;
+        font-size: 2em;
+        margin-bottom: 1vh;
+    }
+
+    .voltar4{
+        background-color: #3d7292;
+        padding: 8px 5px;
+        font-size: 20px;  
+        margin-bottom: 10px;  
+        border-radius: 20px;
+        cursor: pointer;
+        margin-left: 4vw;
+        flex: 1 1 50%;
+        position: relative;
+        width: 10%;
+        text-align: center;
+        top: 0;
+        right: 0;
+    }
+
+    .principalforms {
+        width: 75%;
+        margin: auto;
+        margin-top: 60px;
+    }
+
     .menu {
       padding-bottom: 0;
     }
@@ -398,7 +452,7 @@ select {
     }
 
     .voltar2{
-        background-color: #E5C03B;;
+        background-color: #E5C03B;
         padding: 8px 5px;
         font-size: 20px;  
         border-radius: 20px;
@@ -432,12 +486,27 @@ select {
         margin-top: 12px;
     }
 
-    .voltar3, a{
+    .volar3, a{
         color:#fff;
     }
 
+    .voltar4{
+        height: 35px;
+        background-color: #3d7292;
+        padding: 3px 5px;
+        border-radius: 20px;
+        cursor: pointer;
+        margin-right: 5px;
+        margin-left: -15px;
+        flex: 1 1 50%;
+        position: absolute;
+        width: 25%;
+        margin-top: 3%;
+        text-align: center;
+    }
+
     .resetar{
-        background-color: #E5C03B;;
+        background-color: #E5C03B;
         padding: 8px 5px;
         font-size: 16px;  
         margin-bottom: 3px;  
@@ -447,7 +516,6 @@ select {
         position: absolute;
         width: 38%;
         height: 38px;
-        margin-top: -7%;
         text-align: center;
         margin-left: 3%;
     }
@@ -503,4 +571,22 @@ select {
         margin-top: 5%;
     }
 
+    input[type="submit"] {
+        padding: 8px 5px;
+        border-radius: 50px;
+        margin-left: 38%;
+        height: 45px;
+        margin-top: -1vh;
+    }
+
+    input {
+        font-size: 1em;
+        margin-left: 40px;
+        width: 100px;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        margin-top: 15px;
+        height: 80px;
+    }
 }      
